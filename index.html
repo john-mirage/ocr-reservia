@@ -5,28 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/src/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Primary Meta Tags -->
-  <title>Reservia — Hébergement de vacance</title>
-  <meta name="title" content="Reservia — Hébergement de vacance">
+  <title>Reservia — Hébergement de vacances</title>
+  <meta name="title" content="Reservia — Hébergement de vacances">
   <meta name="description" content="Avec Reservia, Trouvez votre hébergement pour des vacances de rêve en plein centre ville ou en pleine nature.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://john-mirage.github.io/reservia/">
-  <meta property="og:title" content="Reservia — Hébergement de vacance">
+  <meta property="og:title" content="Reservia — Hébergement de vacances">
   <meta property="og:description" content="Avec Reservia, Trouvez votre hébergement pour des vacances de rêve en plein centre ville ou en pleine nature.">
   <meta property="og:image" content="https://john-mirage.github.io/reservia/social-media.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://john-mirage.github.io/reservia/">
-  <meta property="twitter:title" content="Reservia — Hébergement de vacance">
+  <meta property="twitter:title" content="Reservia — Hébergement de vacances">
   <meta property="twitter:description" content="Avec Reservia, Trouvez votre hébergement pour des vacances de rêve en plein centre ville ou en pleine nature.">
   <meta property="twitter:image" content="https://john-mirage.github.io/reservia/social-media.png">
 </head>
 
-<body>
+<body class="page">
+  <!-- container -->
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <div class="header__section header__section--logo">
+        <img class="header__logo" src="/src/images/logo.svg" alt="reservia logo" draggable="false">
+      </div>
+      <div class="header__section header__section--login">
+        <a class="header__login" href="#">S'inscrire</a>
+      </div>
+      <div class="header__section header__section--navigation">
+        <!-- navigation -->
+        <nav class="navigation">
+          <ul class="navigation__list" role="list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#places">Hébergements</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#activities">Activités</a>
+            </li>
+          </ul>
+          <div class="navigation__line navigation__line--track"></div>
+          <div class="navigation__line navigation__line--indicator"></div>
+        </nav>
+      </div>
+    </header>
+    <!-- hero -->
+    <div class="hero">
+      <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
+    </div>
+  </div>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 

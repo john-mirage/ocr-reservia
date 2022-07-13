@@ -1,0 +1,55 @@
+.navigation {
+  margin-left: -24px;
+  margin-right: -24px;
+  position: relative;
+  width: calc(100% + 48px);
+  height: 100%;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation__item {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+}
+
+.navigation__line--track {
+  z-index: 10;
+  width: 100%;
+  background-color: var(--color-light-gray);
+}
+
+.navigation__line--indicator {
+  z-index: 20;
+  width: 50%;
+  background-color: var(--color-blue);
+}
+
+.navigation__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.navigation__link--places:target {
+
+}
+
+.navigation__link--activities:target {
+
+}
