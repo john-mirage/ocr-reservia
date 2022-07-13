@@ -1,9 +1,11 @@
 @import "./reset.css";
 
 @import "./components/container.css";
+@import "./components/fake-navigation.css";
 @import "./components/header.css";
-@import "./components/navigation.css";
 @import "./components/hero.css";
+@import "./components/navigation.css";
+@import "./components/page.css";
 
 :root {
   --color-blue: hsl(216, 100%, 49%);
@@ -15,4 +17,20 @@
 
 body {
   font-family: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+#places:target ~ .fake-navigation > .fake-navigation__line {
+  transform: translateX(0);
+}
+
+#activities:target ~ .fake-navigation > .fake-navigation__line {
+  transform: translateX(100%);
+}
+
+#places:target ~ .fake-navigation > .fake-navigation__section--places {
+  color: var(--color-blue);
+}
+
+#activities:target ~ .fake-navigation > .fake-navigation__section--activities {
+  color: var(--color-blue);
 }
