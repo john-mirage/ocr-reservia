@@ -35,7 +35,7 @@
 }
 
 .filter__input:hover ~ .filter__button {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-light-blue);
 }
 
 .filter__background {
@@ -47,7 +47,7 @@
   height: 100%;
   border-radius: 9999px;
   background-color: var(--color-light-blue);
-  transition-property: background-color, transform, opacity;
+  transition-property: background-color, transform;
   transition-duration: 150ms;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .filter__input:checked:hover ~ .filter__button .filter__background {
-  opacity: 0.8;
+  background-color: var(--color-blue-hover);
 }
 
 .filter__icon-box {
