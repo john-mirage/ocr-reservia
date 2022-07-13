@@ -1,4 +1,4 @@
-.header {
+.top-bar {
   position: relative;
   z-index: 100;
   margin-bottom: 32px;
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.header__section {
+.top-bar__section {
   flex: none;
   display: flex;
   flex-direction: row;
@@ -15,48 +15,48 @@
   height: 56px;
 }
 
-.header__section--logo {
+.top-bar__section--logo {
   width: 50%;
 }
 
-.header__section--login {
+.top-bar__section--login {
   justify-content: flex-end;
   width: 50%;
 }
 
-.header__section--navigation {
+.top-bar__section--navigation {
   width: 100%;
 }
 
-.header__logo {
+.top-bar__logo {
   width: 100px;
   height: auto;
 }
 
-.header__login {
+.top-bar__login {
   font-size: 16px;
   font-weight: 700;
   color: var(--color-blue);
 }
 
 @media screen and (min-width: 768px) {
-  .header {
+  .top-bar {
     flex-wrap: nowrap;
   }
 
-  .header__section--logo {
+  .top-bar__section--logo {
     flex: 1 1 0;
     width: auto;
     order: 1;
   }
   
-  .header__section--login {
+  .top-bar__section--login {
     flex: none;
     width: 80px;
     order: 3;
   }
   
-  .header__section--navigation {
+  .top-bar__section--navigation {
     flex: none;
     width: auto;
     order: 2;

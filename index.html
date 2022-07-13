@@ -59,23 +59,23 @@
 
   <!-- container -->
   <div class="container">
-    <!-- header -->
-    <header class="header">
-      <div class="header__section header__section--logo">
-        <img class="header__logo" src="/src/images/logo.svg" alt="reservia logo" draggable="false">
+    <!-- top bar -->
+    <header class="top-bar">
+      <div class="top-bar__section top-bar__section--logo">
+        <img class="top-bar__logo" src="/src/images/logo.svg" alt="reservia logo" draggable="false">
       </div>
-      <div class="header__section header__section--login">
-        <a class="header__login" href="#">S'inscrire</a>
+      <div class="top-bar__section top-bar__section--login">
+        <a class="top-bar__login" href="#">S'inscrire</a>
       </div>
-      <div class="header__section header__section--navigation">
+      <div class="top-bar__section top-bar__section--navigation">
         <!-- navigation -->
-        <nav class="navigation">
-          <ul class="navigation__list" role="list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#places">Hébergements</a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list" role="list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#places">Hébergements</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#activities">Activités</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#activities">Activités</a>
             </li>
           </ul>
         </nav>
@@ -86,21 +86,20 @@
     <div class="hero">
       <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
-    </div>
-
-    <!-- search bar -->
-    <div class="search-bar">
-      <div class="search-bar__icon-box">
-        <svg class="search-bar__icon" fill="currentColor">
-          <use href="#icon-map"/>
-        </svg>
+      <!-- search bar -->
+      <div class="search-bar">
+        <div class="search-bar__icon-box">
+          <svg class="search-bar__icon" fill="currentColor">
+            <use href="#icon-map"/>
+          </svg>
+        </div>
+        <input class="search-bar__input" type="text" value="Marseille, France">
+        <button class="search-bar__button">
+          <svg class="search-bar__icon" fill="currentColor">
+            <use href="#icon-search"/>
+          </svg>
+        </button>
       </div>
-      <input class="search-bar__input" type="text" value="Marseille, France">
-      <button class="search-bar__button">
-        <svg class="search-bar__icon" fill="currentColor">
-          <use href="#icon-search"/>
-        </svg>
-      </button>
     </div>
 
     <!-- filter list -->
@@ -144,20 +143,19 @@
           <div class="filter__label">Animaux autorisés</div>
         </li>
       </ul>
-    </div>
-
-    <!-- filter info -->
-    <div class="filter-info">
-      <div class="filter-info__icon-box">
-        <svg class="filter-info__icon" fill="currentColor">
-          <use href="#icon-info"/>
-        </svg>
+      <!-- filter info -->
+      <div class="filter-info">
+        <div class="filter-info__icon-box">
+          <svg class="filter-info__icon" fill="currentColor">
+            <use href="#icon-info"/>
+          </svg>
+        </div>
+        <p class="filter-info__result">Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-      <p class="filter-info__count">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
-    <!-- results -->
-    <div class="results">
+    <!-- card groups -->
+    <div class="card-groups">
       <!-- card list -->
       <div class="card-list">
         <div class="card-list__header">
@@ -224,8 +222,8 @@
     </div>
   </div>
 
-  <!-- footer -->
-  <footer class="footer">
+  <!-- bottom bar -->
+  <footer class="bottom-bar">
     <!-- container -->
     <div class="container">
       <!-- alt navigation -->

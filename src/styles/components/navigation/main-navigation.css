@@ -1,4 +1,4 @@
-.navigation {
+.main-navigation {
   margin-left: -24px;
   margin-right: -24px;
   width: calc(100% + 48px);
@@ -6,19 +6,19 @@
   border-bottom: 4px solid transparent;
 }
 
-.navigation__list {
+.main-navigation__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
 }
 
-.navigation__item {
+.main-navigation__item {
   flex: 1 1 0;
   height: 100%;
 }
 
-.navigation__link {
+.main-navigation__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 375px) {
-  .navigation {
+  .main-navigation {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
+  .main-navigation {
     width: 348px;
     border: none;
   }

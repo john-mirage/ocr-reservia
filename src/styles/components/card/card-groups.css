@@ -1,4 +1,4 @@
-.results {
+.card-groups {
   display: grid;
   grid-template-areas: "places     popular"
                        "activities activities";
