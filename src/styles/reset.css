@@ -66,6 +66,7 @@ a {
 button {
   border: none;
   padding: 0;
+  background-color: transparent;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
