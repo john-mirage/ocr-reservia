@@ -2,6 +2,7 @@
 
 @import "./components/container.css";
 @import "./components/fake-navigation.css";
+@import "./components/filter-info.css";
 @import "./components/filter-list.css";
 @import "./components/filter.css";
 @import "./components/header.css";

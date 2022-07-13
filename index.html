@@ -49,6 +49,12 @@
     <symbol id="icon-dog" viewBox="0 0 576 512">
       <path d="M332.7 19.85C334.6 8.395 344.5 0 356.1 0C363.6 0 370.6 3.52 375.1 9.502L392 32H444.1C456.8 32 469.1 37.06 478.1 46.06L496 64H552C565.3 64 576 74.75 576 88V112C576 156.2 540.2 192 496 192H426.7L421.6 222.5L309.6 158.5L332.7 19.85zM448 64C439.2 64 432 71.16 432 80C432 88.84 439.2 96 448 96C456.8 96 464 88.84 464 80C464 71.16 456.8 64 448 64zM416 256.1V480C416 497.7 401.7 512 384 512H352C334.3 512 320 497.7 320 480V364.8C295.1 377.1 268.8 384 240 384C211.2 384 184 377.1 160 364.8V480C160 497.7 145.7 512 128 512H96C78.33 512 64 497.7 64 480V249.8C35.23 238.9 12.64 214.5 4.836 183.3L.9558 167.8C-3.331 150.6 7.094 133.2 24.24 128.1C41.38 124.7 58.76 135.1 63.05 152.2L66.93 167.8C70.49 182 83.29 191.1 97.97 191.1H303.8L416 256.1z"/>
     </symbol>
+    <symbol id="icon-info" viewBox="0 0 192 512">
+      <path d="M160 448h-32V224c0-17.69-14.33-32-32-32L32 192c-17.67 0-32 14.31-32 32s14.33 31.1 32 31.1h32v192H32c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32S177.7 448 160 448zM96 128c26.51 0 48-21.49 48-48S122.5 32.01 96 32.01s-48 21.49-48 48S69.49 128 96 128z"/>
+    </symbol>
+    <symbol id="icon-trending" viewBox="0 0 576 512">
+      <path d="M384 160C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H544C561.7 96 576 110.3 576 128V288C576 305.7 561.7 320 544 320C526.3 320 512 305.7 512 288V205.3L342.6 374.6C330.1 387.1 309.9 387.1 297.4 374.6L191.1 269.3L54.63 406.6C42.13 419.1 21.87 419.1 9.372 406.6C-3.124 394.1-3.124 373.9 9.372 361.4L169.4 201.4C181.9 188.9 202.1 188.9 214.6 201.4L320 306.7L466.7 159.1L384 160z"/>
+    </symbol>
   </svg>
 
   <!-- container -->
@@ -97,9 +103,10 @@
       </button>
     </div>
 
+    <!-- filter list -->
     <div class="filter-list">
       <h2 class="filter-list__title">Fitres</h2>
-      <ul class="filter-list__content" role="list">
+      <ul class="filter-list__row" role="list">
         <!-- filter -->
         <li class="filter">
           <div class="filter__icon-box">
@@ -139,8 +146,76 @@
       </ul>
     </div>
 
-    <div id="places"></div>
-    <div id="activities"></div>
+    <!-- filter info -->
+    <div class="filter-info">
+      <div class="filter-info__icon-box">
+        <svg class="filter-info__icon" fill="currentColor">
+          <use href="#icon-info"/>
+        </svg>
+      </div>
+      <p class="filter-info__count">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+
+    <!-- results -->
+    <div class="results">
+      <!-- card list -->
+      <div class="card-list">
+        <div class="card-list__header">
+          <h2 class="card-list__title">Les plus populaires</h2>
+          <svg class="card-list__icon" fill="currentColor">
+            <use href="#icon-trending"/>
+          </svg>
+        </div>
+        <ul class="card-list__column">
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+        </ul>
+      </div>
+      <!-- card list -->
+      <div class="card-list" id="places">
+        <div class="card-list__header">
+          <h2 class="card-list__title">Hébergements à Marseille</h2>
+        </div>
+        <ul class="card-list__grid">
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+        </ul>
+      </div>
+      <!-- card list -->
+      <div class="card-list" id="activities">
+        <div class="card-list__header">
+          <h2 class="card-list__title">Activités à Marseille</h2>
+        </div>
+        <ul class="card-list__grid">
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+          <!-- card -->
+          <li class="card"></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- fake navigation -->
     <div class="fake-navigation" aria-hidden="true">
@@ -149,6 +224,52 @@
       <div class="fake-navigation__line"></div>
     </div>
   </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <!-- container -->
+    <div class="container">
+      <!-- alt navigation -->
+      <nav class="alt-navigation">
+        <p class="alt-navigation__title">A propos</p>
+        <ul class="alt-navigation__list">
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Fonctionnement du site</a>
+          </li>
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Conditions générales de ventes</a>
+          </li>
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Données et confidentialité</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- alt navigation -->
+      <nav class="alt-navigation">
+        <p class="alt-navigation__title">Nos hébergements</p>
+        <ul class="alt-navigation__list">
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Chart qualité</a>
+          </li>
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Soumettre votre hôtel</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- alt navigation -->
+      <nav class="alt-navigation">
+        <p class="alt-navigation__title">Assistance</p>
+        <ul class="alt-navigation__list">
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Centre d'aide</a>
+          </li>
+          <li class="alt-navigation__item">
+            <a class="alt-navigation__link" href="#">Nous contacter</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
