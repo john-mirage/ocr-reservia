@@ -2,15 +2,19 @@
 
 @import "./components/container.css";
 @import "./components/fake-navigation.css";
+@import "./components/filter-list.css";
+@import "./components/filter.css";
 @import "./components/header.css";
 @import "./components/hero.css";
 @import "./components/navigation.css";
 @import "./components/page.css";
+@import "./components/search-bar.css";
 
 :root {
   --color-blue: hsl(216, 100%, 49%);
   --color-light-blue: hsl(216, 100%, 94%);
   --color-light-gray: hsl(0, 0%, 95%);
+  --color-white: hsl(0, 0%, 100%);
   --color-text-primary: hsl(0, 0%, 10%);
   --color-text-secondary: hsl(0, 0%, 30%);
 }

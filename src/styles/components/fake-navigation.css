@@ -36,24 +36,32 @@
 
 @media screen and (min-width: 375px) {
   .fake-navigation {
-    max-width: 375px;
+    max-width: calc(375px - 48px);
   }
 }
 
 @media screen and (min-width: 576px) {
   .fake-navigation {
-    max-width: 576px;
+    max-width: calc(576px - 48px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .fake-navigation {
-    max-width: 768px;
+    top: 0;
+    transform: translateX(-68px);
+    width: 348px;
+    max-width: none;
+    border: none;
+  }
+
+  .fake-navigation__line {
+    bottom: 52px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .fake-navigation {
-    max-width: 992px;
+    transform: translateX(44px);
   }
 }
