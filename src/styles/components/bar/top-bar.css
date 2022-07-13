@@ -44,6 +44,10 @@
     flex-wrap: nowrap;
   }
 
+  .top-bar__section {
+    height: 80px;
+  }
+
   .top-bar__section--logo {
     flex: 1 1 0;
     width: auto;

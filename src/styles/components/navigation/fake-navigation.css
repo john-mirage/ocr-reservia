@@ -56,12 +56,13 @@
     left: calc(50% + 384px);
     transform: translateX(-452px);
     width: 348px;
+    height: 80px;
     max-width: none;
     border: none;
   }
 
   .fake-navigation__line {
-    bottom: 52px;
+    bottom: 76px;
   }
 }
 
