@@ -24,6 +24,10 @@
   transition: color 150ms;
 }
 
+.fake-navigation__section--places {
+  color: var(--color-blue);
+}
+
 .fake-navigation__line {
   position: absolute;
   bottom: -4px;

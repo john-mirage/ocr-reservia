@@ -24,18 +24,10 @@ body {
   font-family: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
-#places:target ~ .fake-navigation > .fake-navigation__line {
-  transform: translateX(0);
-}
+#places:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(0);}
+#activities:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(100%);}
 
-#activities:target ~ .fake-navigation > .fake-navigation__line {
-  transform: translateX(100%);
-}
-
-#places:target ~ .fake-navigation > .fake-navigation__section--places {
-  color: var(--color-blue);
-}
-
-#activities:target ~ .fake-navigation > .fake-navigation__section--activities {
-  color: var(--color-blue);
-}
+#places:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-blue);}
+#places:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-text-primary);}
+#activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-text-primary);}
+#activities:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-blue);}
