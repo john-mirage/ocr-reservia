@@ -53,7 +53,8 @@
 @media screen and (min-width: 768px) {
   .fake-navigation {
     top: 0;
-    transform: translateX(-68px);
+    left: calc(50% + 384px);
+    transform: translateX(-452px);
     width: 348px;
     max-width: none;
     border: none;
@@ -66,6 +67,12 @@
 
 @media screen and (min-width: 992px) {
   .fake-navigation {
-    transform: translateX(44px);
+    left: calc(50% + 496px);
+  }
+}
+
+@media screen and (min-width: 1364px) {
+  .fake-navigation {
+    left: calc(50% + 682px);
   }
 }
