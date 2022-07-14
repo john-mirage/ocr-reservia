@@ -67,15 +67,15 @@
 
   <!-- container -->
   <div class="container" id="app">
-    <!-- top bar -->
-    <header class="top-bar">
-      <div class="top-bar__section top-bar__section--logo">
-        <img class="top-bar__logo" src="/src/images/logo.svg" alt="reservia logo" draggable="false">
+    <!-- header -->
+    <header class="header">
+      <div class="header__section header__section--logo">
+        <img class="header__logo" src="/src/images/logo.svg" alt="reservia logo" draggable="false">
       </div>
-      <div class="top-bar__section top-bar__section--login">
-        <a class="top-bar__login" href="#">S'inscrire</a>
+      <div class="header__section header__section--login">
+        <a class="header__login" href="#">S'inscrire</a>
       </div>
-      <div class="top-bar__section top-bar__section--navigation">
+      <div class="header__section header__section--navigation">
         <!-- navigation -->
         <nav class="main-navigation">
           <ul class="main-navigation__list" role="list">
@@ -94,19 +94,19 @@
     <div class="hero">
       <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
-      <!-- search bar -->
-      <div class="search-bar">
-        <div class="search-bar__icon-box">
-          <svg class="search-bar__icon" fill="currentColor">
+      <!-- search -->
+      <div class="search">
+        <div class="search__icon-box">
+          <svg class="search__icon" fill="currentColor">
             <use href="#icon-map"/>
           </svg>
         </div>
-        <input class="search-bar__input" type="text" value="Marseille, France">
-        <button class="search-bar__button">
-          <svg class="search-bar__icon search-bar__icon--search" fill="currentColor">
+        <input class="search__input" type="text" value="Marseille, France">
+        <button class="search__button">
+          <svg class="search__icon search__icon--search" fill="currentColor">
             <use href="#icon-search"/>
           </svg>
-          <span class="search-bar__label">Rechercher</span>
+          <span class="search__label">Rechercher</span>
         </button>
       </div>
     </div>
@@ -195,7 +195,7 @@
           <!-- card -->
           <li class="card card--row card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/popular/hotel-le-soleil-du-matin.webp" alt="">
+              <img class="card__image" src="/src/images/popular/hotel-le-soleil-du-matin.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel Le soleil du matin</h3>
@@ -212,7 +212,7 @@
           <!-- card -->
           <li class="card card--row card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp" alt="">
+              <img class="card__image" src="/src/images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Au coeur de l'eau chambres d'hôtes</h3>
@@ -229,7 +229,7 @@
           <!-- card -->
           <li class="card card--row card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/popular/hotel-tout-bleu-et-blanc.webp" alt="">
+              <img class="card__image" src="/src/images/popular/hotel-tout-bleu-et-blanc.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel tout bleu et blanc</h3>
@@ -253,7 +253,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="">
+              <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Auberge la cannebière</h3>
@@ -270,7 +270,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="">
+              <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel du port</h3>
@@ -287,7 +287,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="">
+              <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel Les mouettes</h3>
@@ -304,7 +304,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="">
+              <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel de la mer</h3>
@@ -321,7 +321,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="">
+              <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Auberge Le panier</h3>
@@ -338,7 +338,7 @@
           <!-- card -->
           <li class="card card--column card--with-border">
             <div class="card__header">
-              <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="">
+              <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="" draggable="false">
             </div>
             <div class="card__body">
               <h3 class="card__title">Hôtel chez Amina</h3>
@@ -363,44 +363,56 @@
           <!-- card -->
           <li class="card card--column card--full-height grid__item-row-span">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/vieux-port.webp" alt="">
+              <img class="card__image" src="/src/images/activities/vieux-port.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Vieux Port</h3>
+            </div>
           </li>
           <!-- card -->
           <li class="card card--column">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/fort-de-pomegues.webp" alt="">
+              <img class="card__image" src="/src/images/activities/fort-de-pomegues.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Fort de Pomègues</h3>
+            </div>
           </li>
           <!-- card -->
           <li class="card card--column card--full-height grid__item-row-span">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/parc-national-des-calanques.webp" alt="">
+              <img class="card__image" src="/src/images/activities/parc-national-des-calanques.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Parc National des Calanques</h3>
+            </div>
           </li>
           <!-- card -->
           <li class="card card--column">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/notre-dame-de-la-garde.webp" alt="">
+              <img class="card__image" src="/src/images/activities/notre-dame-de-la-garde.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Notre Dame De La Garde</h3>
+            </div>
           </li>
           <!-- card -->
           <li class="card card--column">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/iles-du-frioul.webp" alt="">
+              <img class="card__image" src="/src/images/activities/iles-du-frioul.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Îles du Frioul</h3>
+            </div>
           </li>
           <!-- card -->
           <li class="card card--column">
             <div class="card__header">
-              <img class="card__image" src="/src/images/activities/parc-longchamp.webp" alt="">
+              <img class="card__image" src="/src/images/activities/parc-longchamp.webp" alt="" draggable="false">
             </div>
-            <div class="card__body"></div>
+            <div class="card__body">
+              <h3 class="card__title">Parc Longchamp</h3>
+            </div>
           </li>
         </ul>
       </div>
@@ -413,49 +425,52 @@
     </div>
   </div>
 
-  <!-- bottom bar -->
-  <footer class="bottom-bar">
+  <!-- footer -->
+  <footer class="footer">
     <!-- container -->
     <div class="container">
-      <!-- alt navigation -->
-      <nav class="alt-navigation">
-        <p class="alt-navigation__title">A propos</p>
-        <ul class="alt-navigation__list">
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Fonctionnement du site</a>
-          </li>
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Conditions générales de ventes</a>
-          </li>
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Données et confidentialité</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- alt navigation -->
-      <nav class="alt-navigation">
-        <p class="alt-navigation__title">Nos hébergements</p>
-        <ul class="alt-navigation__list">
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Chart qualité</a>
-          </li>
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Soumettre votre hôtel</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- alt navigation -->
-      <nav class="alt-navigation">
-        <p class="alt-navigation__title">Assistance</p>
-        <ul class="alt-navigation__list">
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Centre d'aide</a>
-          </li>
-          <li class="alt-navigation__item">
-            <a class="alt-navigation__link" href="#">Nous contacter</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- grid -->
+      <div class="grid grid--footer">
+        <!-- alt navigation -->
+        <nav class="alt-navigation">
+          <p class="alt-navigation__title">A propos</p>
+          <ul class="alt-navigation__list">
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Fonctionnement du site</a>
+            </li>
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Conditions générales de ventes</a>
+            </li>
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Données et confidentialité</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- alt navigation -->
+        <nav class="alt-navigation">
+          <p class="alt-navigation__title">Nos hébergements</p>
+          <ul class="alt-navigation__list">
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Chart qualité</a>
+            </li>
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Soumettre votre hôtel</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- alt navigation -->
+        <nav class="alt-navigation">
+          <p class="alt-navigation__title">Assistance</p>
+          <ul class="alt-navigation__list">
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Centre d'aide</a>
+            </li>
+            <li class="alt-navigation__item">
+              <a class="alt-navigation__link" href="#">Nous contacter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </footer>
 
