@@ -60,8 +60,13 @@
     </symbol>
   </svg>
 
+  <input class="page__input" id="filter-economic" type="checkbox">
+  <input class="page__input" id="filter-family" type="checkbox">
+  <input class="page__input" id="filter-romantic" type="checkbox">
+  <input class="page__input" id="filter-pet" type="checkbox">
+
   <!-- container -->
-  <div class="container">
+  <div class="container" id="app">
     <!-- top bar -->
     <header class="top-bar">
       <div class="top-bar__section top-bar__section--logo">
@@ -175,15 +180,17 @@
       <p class="filter-info__result">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
-    <!-- result -->
-    <div class="result">
-      <div class="result__section result__section--popular">
-        <div class="result__row">
-          <h2 class="result__title">Les plus populaires</h2>
-          <svg class="result__icon" fill="currentColor">
+    <!-- grid -->
+    <div class="grid grid--main">
+      <!-- card list -->
+      <div class="card-list card-list--popular">
+        <div class="card-list__row">
+          <h2 class="card-list__title">Les plus populaires</h2>
+          <svg class="card-list__icon" fill="currentColor">
             <use href="#icon-trending"/>
           </svg>
         </div>
+        <!-- grid -->
         <ul class="grid grid--popular">
           <!-- card -->
           <li class="card card--row card--with-border">
@@ -226,8 +233,10 @@
           </li>
         </ul>
       </div>
-      <div class="result__section result__section--places" id="places">
-        <h2 class="result__title">Hébergements à Marseille</h2>
+      <!-- card list -->
+      <div class="card-list card-list--places" id="places">
+        <h2 class="card-list__title">Hébergements à Marseille</h2>
+        <!-- grid -->
         <ul class="grid grid--places">
           <!-- card -->
           <li class="card card--column card--with-border">
@@ -260,10 +269,12 @@
             <div class="card__body"></div>
           </li>
         </ul>
-        <p class="result__more-text">Afficher plus</p>
+        <p class="card-list__more-text">Afficher plus</p>
       </div>
-      <div class="result__section result__section--activities" id="activities">
-        <h2 class="result__title">Activités à Marseille</h2>
+      <!-- card list -->
+      <div class="card-list card-list--activities grid__item-col-span" id="activities">
+        <h2 class="card-list__title">Activités à Marseille</h2>
+        <!-- grid -->
         <ul class="grid grid--activities">
           <!-- card -->
           <li class="card card--column card--full-height grid__item-row-span">

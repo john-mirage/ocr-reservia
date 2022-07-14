@@ -4,19 +4,11 @@
   gap: 24px;
 }
 
-.grid--popular {
-
-}
-
-.grid--places {
-
-}
-
-.grid--activities {
-
-}
-
 @media screen and (min-width: 1412px) {
+  .grid--main {
+    grid-template-columns: 1fr auto;
+  }
+
   .grid--places {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -27,5 +19,9 @@
 
   .grid__item-row-span {
     grid-row: span 2 / span 2;
+  }
+
+  .grid__item-col-span {
+    grid-column: span 2 / span 2;
   }
 }
