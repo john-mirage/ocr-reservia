@@ -15,7 +15,7 @@
 }
 
 .rating--3-of-5 > .rating__icon:nth-child(n+4) {
-  color: var(--color-light-gray);
+  color: var(--color-gray);
 }
 
 .rating--4-of-5 > .rating__icon:nth-child(4) {
@@ -23,7 +23,7 @@
 }
 
 .rating--4-of-5 > .rating__icon:nth-child(5) {
-  color: var(--color-light-gray);
+  color: var(--color-gray);
 }
 
 .rating--5-of-5 > .rating__icon:nth-child(n+4) {

@@ -20,6 +20,7 @@
   --color-blue: hsl(216, 100%, 49%);
   --color-blue-hover: hsl(216, 100%, 59%);
   --color-light-blue: hsl(216, 100%, 94%);
+  --color-gray: hsl(0, 0%, 85%);
   --color-light-gray: hsl(0, 0%, 95%);
   --color-white: hsl(0, 0%, 100%);
   --color-text-primary: hsl(0, 0%, 10%);
