@@ -12,9 +12,9 @@
 }
 
 .result__section--popular {
+  grid-area: popular;
   margin-left: -24px;
   margin-right: -24px;
-  grid-area: popular;
   background-color: var(--color-light-gray);
   padding-left: 24px;
   padding-right: 24px;
@@ -46,12 +46,6 @@
   height: 24px;
 }
 
-.result__grid {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 32px;
-}
-
 .result__more-text {
 
 }
@@ -73,5 +67,14 @@
 
   .result__section--popular {
     width: 428px;
+  }
+}
+
+@media screen and (min-width: 1412px) {
+  .result__section--places {
+    background-color: var(--color-light-gray);
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 20px;
   }
 }

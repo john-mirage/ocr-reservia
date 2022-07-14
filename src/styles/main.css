@@ -2,10 +2,12 @@
 
 @import "./components/card.css";
 @import "./components/container.css";
+@import "./components/grid.css";
 @import "./components/hero.css";
 @import "./components/page.css";
 @import "./components/rating.css";
 @import "./components/result.css";
+@import "./components/bar/bottom-bar.css";
 @import "./components/bar/search-bar.css";
 @import "./components/bar/top-bar.css";
 @import "./components/filter/filter-info.css";

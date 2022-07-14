@@ -35,7 +35,6 @@
   width: 50%;
   height: 4px;
   background-color: var(--color-blue);
-  transition: transform 150ms;
 }
 
 @media screen and (min-width: 576px) {
@@ -66,8 +65,8 @@
   }
 }
 
-@media screen and (min-width: 1364px) {
+@media screen and (min-width: 1412px) {
   .fake-navigation {
-    left: calc(50% + 682px);
+    left: calc(50% + 706px);
   }
 }
