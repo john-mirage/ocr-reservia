@@ -65,6 +65,11 @@ body {
   transform: translateX(calc(100% - 48px));
 }
 
+#filter-economic:checked ~ #app #filter-badge-economic:hover .filter__foreground {background-color: var(--color-blue-hover);}
+#filter-family:checked ~ #app #filter-badge-family:hover .filter__foreground {background-color: var(--color-blue-hover);}
+#filter-romantic:checked ~ #app #filter-badge-romantic:hover .filter__foreground {background-color: var(--color-blue-hover);}
+#filter-pet:checked ~ #app #filter-badge-pet:hover .filter__foreground {background-color: var(--color-blue-hover);}
+
 #filter-economic:checked ~ #app #filter-badge-economic .filter__icon-box {color: var(--color-white);}
 #filter-family:checked ~ #app #filter-badge-family .filter__icon-box {color: var(--color-white);}
 #filter-romantic:checked ~ #app #filter-badge-romantic .filter__icon-box {color: var(--color-white);}
