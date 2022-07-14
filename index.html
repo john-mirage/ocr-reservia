@@ -55,6 +55,9 @@
     <symbol id="icon-trending" viewBox="0 0 576 512">
       <path d="M384 160C366.3 160 352 145.7 352 128C352 110.3 366.3 96 384 96H544C561.7 96 576 110.3 576 128V288C576 305.7 561.7 320 544 320C526.3 320 512 305.7 512 288V205.3L342.6 374.6C330.1 387.1 309.9 387.1 297.4 374.6L191.1 269.3L54.63 406.6C42.13 419.1 21.87 419.1 9.372 406.6C-3.124 394.1-3.124 373.9 9.372 361.4L169.4 201.4C181.9 188.9 202.1 188.9 214.6 201.4L320 306.7L466.7 159.1L384 160z"/>
     </symbol>
+    <symbol id="icon-star" viewBox="0 0 576 512">
+      <path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/>
+    </symbol>
   </svg>
 
   <!-- container -->
@@ -172,64 +175,126 @@
       <p class="filter-info__result">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 
-    <!-- card groups -->
-    <div class="card-groups">
-      <!-- card list -->
-      <div class="card-list">
-        <div class="card-list__header">
-          <h2 class="card-list__title">Les plus populaires</h2>
-          <svg class="card-list__icon" fill="currentColor">
+    <!-- result -->
+    <div class="result">
+      <div class="result__section result__section--popular">
+        <div class="result__row">
+          <h2 class="result__title">Les plus populaires</h2>
+          <svg class="result__icon" fill="currentColor">
             <use href="#icon-trending"/>
           </svg>
         </div>
-        <ul class="card-list__column">
+        <ul class="result__grid">
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--row card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body">
+              <div class="rating rating--3-of-5">
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+              </div>
+            </div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--row card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body">
+              <div class="rating rating--4-of-5">
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+              </div>
+            </div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--row card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body">
+              <div class="rating rating--5-of-5">
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <!-- card list -->
-      <div class="card-list" id="places">
-        <div class="card-list__header">
-          <h2 class="card-list__title">Hébergements à Marseille</h2>
-        </div>
-        <ul class="card-list__grid">
+      <div class="result__section result__section--places" id="places">
+        <h2 class="result__title">Hébergements à Marseille</h2>
+        <ul class="result__grid">
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column card--with-border">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
         </ul>
-        <p class="card-list__more-text">Afficher plus</p>
+        <p class="result__more-text">Afficher plus</p>
       </div>
-      <!-- card list -->
-      <div class="card-list" id="activities">
-        <div class="card-list__header">
-          <h2 class="card-list__title">Activités à Marseille</h2>
-        </div>
-        <ul class="card-list__grid">
+      <div class="result__section result__section--activities" id="activities">
+        <h2 class="result__title">Activités à Marseille</h2>
+        <ul class="result__grid">
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
           <!-- card -->
-          <li class="card"></li>
+          <li class="card card--column">
+            <div class="card__header"></div>
+            <div class="card__body"></div>
+          </li>
         </ul>
       </div>
       <!-- fake navigation -->

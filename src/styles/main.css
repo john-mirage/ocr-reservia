@@ -1,15 +1,18 @@
 @import "./reset.css";
 
+@import "./components/card.css";
 @import "./components/container.css";
 @import "./components/hero.css";
 @import "./components/page.css";
+@import "./components/rating.css";
+@import "./components/result.css";
 @import "./components/bar/search-bar.css";
 @import "./components/bar/top-bar.css";
-@import "./components/navigation/fake-navigation.css";
-@import "./components/navigation/main-navigation.css";
 @import "./components/filter/filter-info.css";
 @import "./components/filter/filter-list.css";
 @import "./components/filter/filter.css";
+@import "./components/navigation/fake-navigation.css";
+@import "./components/navigation/main-navigation.css";
 
 :root {
   --color-blue: hsl(216, 100%, 49%);

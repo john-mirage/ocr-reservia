@@ -1,0 +1,77 @@
+.result {
+  display: grid;
+  grid-template-areas: "popular   "
+                       "places    "
+                       "activities";
+  gap: 40px;
+}
+
+.result__section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.result__section--popular {
+  margin-left: -24px;
+  margin-right: -24px;
+  grid-area: popular;
+  background-color: var(--color-light-gray);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.result__section--places {
+  grid-area: places;
+}
+
+.result__section--activities {
+  grid-area: activities;
+}
+
+.result__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.result__icon {
+  margin-bottom: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.result__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.result__more-text {
+
+}
+
+@media screen and (min-width: 576px) {
+  .result__section--popular {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .result {
+    grid-template-areas: "places     popular   "
+                         "activities activities";
+    grid-template-columns: 1fr auto;
+  }
+
+  .result__section--popular {
+    width: 428px;
+  }
+}

@@ -38,12 +38,6 @@
   transition: transform 150ms;
 }
 
-@media screen and (min-width: 375px) {
-  .fake-navigation {
-    max-width: calc(375px - 48px);
-  }
-}
-
 @media screen and (min-width: 576px) {
   .fake-navigation {
     max-width: calc(576px - 48px);
