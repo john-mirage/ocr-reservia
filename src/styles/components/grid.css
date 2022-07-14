@@ -5,6 +5,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .grid--popular,
+  .grid--places,
+  .grid--activities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
   .grid--footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -15,6 +21,10 @@
     grid-template-columns: 1fr auto;
   }
 
+  .grid--popular {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .grid--places {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -23,11 +33,11 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .grid__item-row-span {
+  .grid__item--row-span {
     grid-row: span 2 / span 2;
   }
 
-  .grid__item-col-span {
+  .grid__item--col-span {
     grid-column: span 2 / span 2;
   }
 }

@@ -90,7 +90,7 @@ body {
 \*------------------------------------*/
 
 /* Initial state */
-#app #places .card {
+#app #places .grid__item {
   display: none;
 }
 
@@ -98,7 +98,7 @@ body {
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .card {
+#filter-pet:not(:checked) ~ #app #places .grid__item {
   display: flex;
 }
 
@@ -106,7 +106,7 @@ body {
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
 }
 
@@ -114,28 +114,28 @@ body {
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="family"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="romantic"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="romantic"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .card[data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="pet"] {
   display: flex;
 }
 
@@ -143,42 +143,42 @@ body {
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="family"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"] {
   display: flex;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="romantic"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"] {
   display: flex;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="pet"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="family"][data-filter~="romantic"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .card[data-filter~="family"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="pet"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .card[data-filter~="romantic"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
 }
 
@@ -186,31 +186,27 @@ body {
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] {
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] {
   display: flex;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
 }
 
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] {
   display: flex;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .card[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
-}
-
-.grid--places:empty::after {
-  content: "Il n'y a pas de résultats";
 }
