@@ -101,7 +101,7 @@ body {
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .card {
+#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
 }
 
@@ -204,4 +204,8 @@ body {
 #filter-romantic:checked ~
 #filter-pet:checked ~ #app #places .card[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
   display: flex;
+}
+
+.grid--places:empty::after {
+  content: "Il n'y a pas de résultats";
 }
