@@ -32,6 +32,10 @@ body {
   font-family: 'Raleway', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
+/*------------------------------------*\
+  #fake-navigation
+\*------------------------------------*/
+
 #places:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(0);}
 #activities:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(100%);}
 
@@ -40,21 +44,9 @@ body {
 #activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-text-primary);}
 #activities:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-blue);}
 
-#app #places .card {
-  display: none;
-}
-
-#filter-economic:not(:checked) ~
-#filter-family:not(:checked) ~
-#filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .card {
-  display: flex;
-}
-
-#filter-economic:checked ~ #app #places .card[data-filter~="economic"] {display: flex;}
-#filter-family:checked ~ #app #places .card[data-filter~="family"] {display: flex;}
-#filter-romantic:checked ~ #app #places .card[data-filter~="romantic"] {display: flex;}
-#filter-pet:checked ~ #app #places .card[data-filter~="pet"] {display: flex;}
+/*------------------------------------*\
+  #filters
+\*------------------------------------*/
 
 #filter-economic:checked ~ #app #filter-badge-economic .filter__foreground {
   background-color: var(--color-blue);
@@ -87,3 +79,129 @@ body {
 #filter-family:checked ~ #app #filter-badge-family .filter__label {color: var(--color-white);}
 #filter-romantic:checked ~ #app #filter-badge-romantic .filter__label {color: var(--color-white);}
 #filter-pet:checked ~ #app #filter-badge-pet .filter__label {color: var(--color-white);}
+
+/*------------------------------------*\
+  #card-filter
+\*------------------------------------*/
+
+/* Initial state */
+#app #places .card {
+  display: none;
+}
+
+/* if all not checked */
+#filter-economic:not(:checked) ~
+#filter-family:not(:checked) ~
+#filter-romantic:not(:checked) ~
+#filter-pet:not(:checked) ~ #app #places .card {
+  display: flex;
+}
+
+/* if all checked */
+#filter-economic:checked ~
+#filter-family:checked ~
+#filter-romantic:checked ~
+#filter-pet:checked ~ #app #places .card {
+  display: flex;
+}
+
+/* if 1 checked */
+#filter-economic:checked ~
+#filter-family:not(:checked) ~
+#filter-romantic:not(:checked) ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:checked ~
+#filter-romantic:not(:checked) ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="family"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:not(:checked) ~
+#filter-romantic:checked ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="romantic"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:not(:checked) ~
+#filter-romantic:not(:checked) ~
+#filter-pet:checked ~ #app #places .card[data-filter~="pet"] {
+  display: flex;
+}
+
+/* if 2 checked */
+#filter-economic:checked ~
+#filter-family:checked ~
+#filter-romantic:not(:checked) ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="family"] {
+  display: flex;
+}
+
+#filter-economic:checked ~
+#filter-family:not(:checked) ~
+#filter-romantic:checked ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="romantic"] {
+  display: flex;
+}
+
+#filter-economic:checked ~
+#filter-family:not(:checked) ~
+#filter-romantic:not(:checked) ~
+#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="pet"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:checked ~
+#filter-romantic:checked ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="family"][data-filter~="romantic"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:checked ~
+#filter-romantic:not(:checked) ~
+#filter-pet:checked ~ #app #places .card[data-filter~="family"][data-filter~="pet"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:not(:checked) ~
+#filter-romantic:checked ~
+#filter-pet:checked ~ #app #places .card[data-filter~="romantic"][data-filter~="pet"] {
+  display: flex;
+}
+
+/* if 3 checked */
+#filter-economic:checked ~
+#filter-family:checked ~
+#filter-romantic:checked ~
+#filter-pet:not(:checked) ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] {
+  display: flex;
+}
+
+#filter-economic:checked ~
+#filter-family:not(:checked) ~
+#filter-romantic:checked ~
+#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] {
+  display: flex;
+}
+
+#filter-economic:checked ~
+#filter-family:checked ~
+#filter-romantic:not(:checked) ~
+#filter-pet:checked ~ #app #places .card[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] {
+  display: flex;
+}
+
+#filter-economic:not(:checked) ~
+#filter-family:checked ~
+#filter-romantic:checked ~
+#filter-pet:checked ~ #app #places .card[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
+  display: flex;
+}
