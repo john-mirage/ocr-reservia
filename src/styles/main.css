@@ -1,18 +1,19 @@
 @import "./reset.css";
 
 @import "./components/container.css";
+@import "./components/footer.css";
 @import "./components/grid.css";
+@import "./components/header.css";
 @import "./components/hero.css";
 @import "./components/page.css";
 @import "./components/rating.css";
-@import "./components/bar/bottom-bar.css";
-@import "./components/bar/search-bar.css";
+@import "./components/search.css";
 @import "./components/card/card-list.css";
 @import "./components/card/card.css";
-@import "./components/bar/top-bar.css";
 @import "./components/filter/filter-info.css";
 @import "./components/filter/filter-list.css";
 @import "./components/filter/filter.css";
+@import "./components/navigation/alt-navigation.css";
 @import "./components/navigation/fake-navigation.css";
 @import "./components/navigation/main-navigation.css";
 

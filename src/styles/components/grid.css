@@ -4,6 +4,12 @@
   gap: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .grid--footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media screen and (min-width: 1412px) {
   .grid--main {
     grid-template-columns: 1fr auto;

@@ -1,4 +1,4 @@
-.top-bar {
+.header {
   position: relative;
   z-index: 100;
   margin-bottom: 32px;
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.top-bar__section {
+.header__section {
   flex: none;
   display: flex;
   flex-direction: row;
@@ -15,52 +15,52 @@
   height: 56px;
 }
 
-.top-bar__section--logo {
+.header__section--logo {
   width: 50%;
 }
 
-.top-bar__section--login {
+.header__section--login {
   justify-content: flex-end;
   width: 50%;
 }
 
-.top-bar__section--navigation {
+.header__section--navigation {
   width: 100%;
 }
 
-.top-bar__logo {
+.header__logo {
   width: 100px;
   height: auto;
 }
 
-.top-bar__login {
+.header__login {
   font-size: 16px;
   font-weight: 700;
   color: var(--color-blue);
 }
 
 @media screen and (min-width: 768px) {
-  .top-bar {
+  .header {
     flex-wrap: nowrap;
   }
 
-  .top-bar__section {
+  .header__section {
     height: 80px;
   }
 
-  .top-bar__section--logo {
+  .header__section--logo {
     flex: 1 1 0;
     width: auto;
     order: 1;
   }
   
-  .top-bar__section--login {
+  .header__section--login {
     flex: none;
     width: 80px;
     order: 3;
   }
   
-  .top-bar__section--navigation {
+  .header__section--navigation {
     flex: none;
     width: auto;
     order: 2;
