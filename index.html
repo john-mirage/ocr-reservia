@@ -115,57 +115,57 @@
     <div class="filter-list">
       <h2 class="filter-list__title">Filtres</h2>
       <ul class="filter-list__row" role="list">
-        <!-- filter -->
-        <li class="filter">
-          <input class="filter__input" type="checkbox">
-          <button class="filter__button">
+        <li class="filter-list__item">
+          <!-- filter -->
+          <label class="filter" id="filter-badge-economic" for="filter-economic" tabindex="0">
             <span class="filter__background"></span>
+            <span class="filter__foreground"></span>
             <span class="filter__icon-box">
               <svg class="filter__icon" fill="currentColor">
                 <use href="#icon-money"/>
               </svg>
             </span>
             <span class="filter__label">Economique</span>
-          </button>
+          </label>
         </li>
-        <!-- filter -->
-        <li class="filter">
-          <input class="filter__input" type="checkbox">
-          <button class="filter__button">
+        <li class="filter-list__item">
+          <!-- filter -->
+          <label class="filter" id="filter-badge-family" for="filter-family" tabindex="0">
             <span class="filter__background"></span>
+            <span class="filter__foreground"></span>
             <span class="filter__icon-box">
               <svg class="filter__icon" fill="currentColor">
                 <use href="#icon-family"/>
               </svg>
             </span>
             <span class="filter__label">Familial</span>
-          </button>
+          </label>
         </li>
-        <!-- filter -->
-        <li class="filter">
-          <input class="filter__input" type="checkbox">
-          <button class="filter__button">
+        <li class="filter-list__item">
+          <!-- filter -->
+          <label class="filter" id="filter-badge-romantic" for="filter-romantic" tabindex="0">
             <span class="filter__background"></span>
+            <span class="filter__foreground"></span>
             <span class="filter__icon-box">
               <svg class="filter__icon" fill="currentColor">
                 <use href="#icon-heart"/>
               </svg>
             </span>
             <span class="filter__label">Romantique</span>
-          </button>
+          </label>
         </li>
-        <!-- filter -->
-        <li class="filter">
-          <input class="filter__input" type="checkbox">
-          <button class="filter__button">
+        <li class="filter-list__item">
+          <!-- filter -->
+          <label class="filter" id="filter-badge-pet" for="filter-pet" tabindex="0">
             <span class="filter__background"></span>
+            <span class="filter__foreground"></span>
             <span class="filter__icon-box">
               <svg class="filter__icon" fill="currentColor">
                 <use href="#icon-dog"/>
               </svg>
             </span>
             <span class="filter__label">Animaux autorisés</span>
-          </button>
+          </label>
         </li>
       </ul>
     </div>
@@ -251,7 +251,7 @@
         <!-- grid -->
         <ul class="grid grid--places">
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="economic family">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="" draggable="false">
             </div>
@@ -268,7 +268,7 @@
             </div>
           </li>
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="pet">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="" draggable="false">
             </div>
@@ -285,7 +285,7 @@
             </div>
           </li>
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="romantic">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="" draggable="false">
             </div>
@@ -302,7 +302,7 @@
             </div>
           </li>
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="romantic">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="" draggable="false">
             </div>
@@ -319,7 +319,7 @@
             </div>
           </li>
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="economic family">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="" draggable="false">
             </div>
@@ -336,7 +336,7 @@
             </div>
           </li>
           <!-- card -->
-          <li class="card card--column card--with-border">
+          <li class="card card--column card--with-border" data-filter="pet">
             <div class="card__header">
               <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="" draggable="false">
             </div>

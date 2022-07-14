@@ -40,14 +40,50 @@ body {
 #activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-text-primary);}
 #activities:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-blue);}
 
-#filter-economic:checked ~ #app .card[data-filter~="economic"] {display: block;}
-#filter-economic:checked ~ #app .card:not([data-filter~="economic"]) {display: none;}
+#app #places .card {
+  display: none;
+}
 
-#filter-family:checked ~ #app .card[data-filter~="family"] {display: block;}
-#filter-family:checked ~ #app .card:not([data-filter~="family"]) {display: none;}
+#filter-economic:not(:checked) ~
+#filter-family:not(:checked) ~
+#filter-romantic:not(:checked) ~
+#filter-pet:not(:checked) ~ #app #places .card {
+  display: flex;
+}
 
-#filter-romantic:checked ~ #app .card[data-filter~="romantic"] {display: block;}
-#filter-romantic:checked ~ #app .card:not([data-filter~="romantic"]) {display: none;}
+#filter-economic:checked ~ #app #places .card[data-filter~="economic"] {display: flex;}
+#filter-family:checked ~ #app #places .card[data-filter~="family"] {display: flex;}
+#filter-romantic:checked ~ #app #places .card[data-filter~="romantic"] {display: flex;}
+#filter-pet:checked ~ #app #places .card[data-filter~="pet"] {display: flex;}
 
-#filter-pet:checked ~ #app .card[data-filter~="pet"] {display: block;}
-#filter-pet:checked ~ #app .card:not([data-filter~="pet"]) {display: none;}
+#filter-economic:checked ~ #app #filter-badge-economic .filter__foreground {
+  background-color: var(--color-blue);
+  transform: translateX(calc(100% - 48px));
+}
+#filter-family:checked ~ #app #filter-badge-family .filter__foreground {
+  background-color: var(--color-blue);
+  transform: translateX(calc(100% - 48px));
+}
+#filter-romantic:checked ~ #app #filter-badge-romantic .filter__foreground {
+  background-color: var(--color-blue);
+  transform: translateX(calc(100% - 48px));
+}
+#filter-pet:checked ~ #app #filter-badge-pet .filter__foreground {
+  background-color: var(--color-blue);
+  transform: translateX(calc(100% - 48px));
+}
+
+#filter-economic:checked ~ #app #filter-badge-economic .filter__icon-box {color: var(--color-white);}
+#filter-family:checked ~ #app #filter-badge-family .filter__icon-box {color: var(--color-white);}
+#filter-romantic:checked ~ #app #filter-badge-romantic .filter__icon-box {color: var(--color-white);}
+#filter-pet:checked ~ #app #filter-badge-pet .filter__icon-box {color: var(--color-white);}
+
+#filter-economic:checked ~ #app #filter-badge-economic .filter__icon {transform: translateX(50%);}
+#filter-family:checked ~ #app #filter-badge-family .filter__icon {transform: translateX(50%);}
+#filter-romantic:checked ~ #app #filter-badge-romantic .filter__icon {transform: translateX(50%);}
+#filter-pet:checked ~ #app #filter-badge-pet .filter__icon {transform: translateX(50%);}
+
+#filter-economic:checked ~ #app #filter-badge-economic .filter__label {color: var(--color-white);}
+#filter-family:checked ~ #app #filter-badge-family .filter__label {color: var(--color-white);}
+#filter-romantic:checked ~ #app #filter-badge-romantic .filter__label {color: var(--color-white);}
+#filter-pet:checked ~ #app #filter-badge-pet .filter__label {color: var(--color-white);}
