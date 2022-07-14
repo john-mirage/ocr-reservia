@@ -30,6 +30,7 @@
 }
 
 .card-list__more-text {
+  margin-top: 32px;
   font-size: 18px;
   font-weight: 700;
   color: var(--color-text-primary);
