@@ -4,6 +4,24 @@
   gap: 24px;
 }
 
+.grid__item--with-overlay {
+  position: relative;
+}
+
+.grid__overlay {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  opacity: 0.8;
+  border-radius: 20px;
+  transition-property: visibility, opacity;
+  transition-duration: 150ms;
+}
+
 @media screen and (min-width: 768px) {
   .grid--popular,
   .grid--places,

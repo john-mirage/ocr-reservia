@@ -90,123 +90,140 @@ body {
 \*------------------------------------*/
 
 /* Initial state */
-#app #places .grid__item {
-  display: none;
+#app #places .grid__item > .grid__overlay {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 /* if all not checked */
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* if all checked */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* if 1 checked */
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="romantic"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="romantic"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* if 2 checked */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="romantic"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* if 3 checked */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] {
-  display: flex;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
-  display: flex;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
+  visibility: hidden;
+  opacity: 0;
 }
