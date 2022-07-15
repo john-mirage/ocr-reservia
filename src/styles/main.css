@@ -146,7 +146,7 @@ body {
   opacity: 0;
 }
 
-/* if 2 checked */
+/* if 2 checked  */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
