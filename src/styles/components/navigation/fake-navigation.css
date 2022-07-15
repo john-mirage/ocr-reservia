@@ -19,7 +19,7 @@
   width: 50%;
   height: 100%;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-text-primary);
   transition: color 150ms;
 }
@@ -51,7 +51,8 @@
     width: 348px;
     height: 80px;
     max-width: none;
-    border: none;
+    border-bottom: none;
+    border-top: 4px solid transparent;
   }
 
   .fake-navigation__line {

@@ -24,11 +24,17 @@
   align-items: center;
   height: 100%;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
+  background-color: transparent;
   color: transparent;
 }
 
-@media screen and (min-width: 375px) {
+.main-navigation__link:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+@media screen and (min-width: 576px) {
   .main-navigation {
     margin-left: 0;
     margin-right: 0;
@@ -39,6 +45,7 @@
 @media screen and (min-width: 768px) {
   .main-navigation {
     width: 348px;
-    border: none;
+    border-bottom: none;
+    border-top: 4px solid transparent;
   }
 }
