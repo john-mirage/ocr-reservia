@@ -61,11 +61,18 @@
   border-radius: 16px;
   background-color: var(--color-blue);
   color: var(--color-white);
-  transition: background-color 150ms;
 }
 
-.search__button:hover {
-  background-color: var(--color-blue-hover);
+@media (prefers-reduced-motion: no-preference) {
+  .search__button {
+    transition: background-color 150ms;
+  }
+}
+
+@media (hover: hover) {
+  .search__button:hover {
+    background-color: var(--color-blue-hover);
+  }
 }
 
 .search__label {

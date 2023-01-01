@@ -29,9 +29,11 @@
   color: transparent;
 }
 
-.main-navigation__link:hover {
-  background-color: var(--color-white);
-  color: var(--color-blue);
+@media (hover: hover) {
+  .main-navigation__link:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+  }
 }
 
 @media screen and (min-width: 576px) {

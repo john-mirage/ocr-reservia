@@ -17,8 +17,13 @@
   overflow: hidden;
   cursor: pointer;
   box-shadow: inset 0 0 0 var(--_filter-shadow-size) var(--_filter-border-color);
-  transition-property: box-shadow;
-  transition-duration: var(--_filter-transition-duration);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .filter {
+    transition-property: box-shadow;
+    transition-duration: var(--_filter-transition-duration);
+  }
 }
 
 .filter__background {
@@ -41,8 +46,13 @@
   border-radius: 9999px;
   background-color: var(--_filter-foreground-color);
   transform: translateX(var(--_filter-foreground-x));
-  transition-property: background-color, transform;
-  transition-duration: var(--_filter-transition-duration);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .filter__foreground {
+    transition-property: background-color, transform;
+    transition-duration: var(--_filter-transition-duration);
+  }
 }
 
 .filter__icon-box {

@@ -21,7 +21,12 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--color-text-primary);
-  transition: color 150ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fake-navigation__section {
+    transition: color 150ms;
+  }
 }
 
 .fake-navigation__section--places {

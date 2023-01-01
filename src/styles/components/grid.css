@@ -18,8 +18,13 @@
   background-color: var(--color-white);
   opacity: 0.8;
   border-radius: 20px;
-  transition-property: visibility, opacity;
-  transition-duration: 150ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .grid__overlay {
+    transition-property: visibility, opacity;
+    transition-duration: 150ms;
+  }
 }
 
 @media screen and (min-width: 768px) {
