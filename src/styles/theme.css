@@ -1,11 +1,29 @@
 :root {
-    --font-family: 'Raleway';
-    --color-blue: hsl(216, 100%, 49%);
-    --color-blue-hover: hsl(216, 100%, 59%);
-    --color-light-blue: hsl(216, 100%, 94%);
-    --color-gray: hsl(0, 0%, 85%);
-    --color-light-gray: hsl(0, 0%, 95%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-text-primary: hsl(0, 0%, 10%);
-    --color-text-secondary: hsl(0, 0%, 30%);
-  }
+  --font-family: 'Raleway';
+
+  --color-blue-700: hsl(228, 81%, 59%);
+  --color-blue-500: hsl(228, 94%, 67%);
+  --color-blue-100: hsl(225, 100%, 93%);
+
+  --color-gray-900: hsl(210, 11%, 9%);
+  --color-gray-800: hsl(210, 10%, 13%);
+  --color-gray-700: hsl(210, 9%, 31%);
+  --color-gray-500: hsl(210, 11%, 71%);
+  --color-gray-300: hsl(210, 14%, 89%);
+  --color-gray-100: hsl(210, 17%, 95%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-blue: hsl(216, 100%, 49%);
+  --color-blue-hover: hsl(216, 100%, 59%);
+  --color-light-blue: hsl(216, 100%, 94%);
+
+  --color-gray: hsl(0, 0%, 85%);
+  --color-light-gray: hsl(0, 0%, 95%);
+
+  --color-text-primary: hsl(0, 0%, 10%);
+  --color-text-secondary: hsl(0, 0%, 30%);
+
+  --color-black: hsl(0, 0%, 10%);
+  --color-dark-gray: hsl(0, 0%, 30%);
+}

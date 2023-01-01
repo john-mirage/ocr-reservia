@@ -20,13 +20,6 @@
   border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .grid__overlay {
-    transition-property: visibility, opacity;
-    transition-duration: 150ms;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .grid--popular,
   .grid--places,
@@ -62,5 +55,12 @@
 
   .grid__item--col-span {
     grid-column: span 2 / span 2;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .grid__overlay {
+    transition-property: visibility, opacity;
+    transition-duration: 150ms;
   }
 }

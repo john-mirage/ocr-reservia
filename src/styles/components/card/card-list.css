@@ -1,4 +1,7 @@
 .card-list {
+  --_card-list-background-color: var(--color-gray-100);
+  --_card-list-text-color: var(--color-gray-900);
+  --_card-list-link-color: var(--color-gray-900);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -6,7 +9,7 @@
 .card-list--popular {
   margin-left: -24px;
   margin-right: -24px;
-  background-color: var(--color-light-gray);
+  background-color: var(--_card-list-background-color);
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -21,19 +24,22 @@
 .card-list__title {
   margin-bottom: 16px;
   font-size: 20px;
+  color: var(--_card-list-text-color);
 }
 
 .card-list__icon {
   margin-bottom: 16px;
   width: 24px;
   height: 24px;
+  color: var(--_card-list-text-color);
 }
 
-.card-list__more-text {
+.card-list__link {
   margin-top: 32px;
+  display: inline-block;
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--_card-list-link-color);
 }
 
 @media screen and (min-width: 576px) {
@@ -52,7 +58,7 @@
 
   .card-list--places {
     order: 1;
-    background-color: var(--color-light-gray);
+    background-color: var(--_card-list-background-color);
     padding-left: 24px;
     padding-right: 24px;
     border-radius: 20px;
@@ -60,5 +66,25 @@
 
   .card-list--activities {
     order: 3;
+  }
+}
+
+@media (hover: hover) {
+  .card-list__link:hover {
+    --_card-list-link-color: var(--color-blue-700);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card-list {
+    --_card-list-background-color: var(--color-gray-800);
+    --_card-list-text-color: var(--color-gray-100);
+    --_card-list-link-color: var(--color-gray-100);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card-list__link {
+    transition: color 150ms;
   }
 }

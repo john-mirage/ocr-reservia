@@ -63,18 +63,6 @@
   color: var(--color-white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .search__button {
-    transition: background-color 150ms;
-  }
-}
-
-@media (hover: hover) {
-  .search__button:hover {
-    background-color: var(--color-blue-hover);
-  }
-}
-
 .search__label {
   display: none;
 }
@@ -102,5 +90,17 @@
     display: block;
     font-size: 16px;
     font-weight: 700;
+  }
+}
+
+@media (hover: hover) {
+  .search__button:hover {
+    background-color: var(--color-blue-hover);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .search__button {
+    transition: background-color 150ms;
   }
 }

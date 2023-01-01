@@ -1,4 +1,6 @@
 .hero {
+  --_hero-title-color: var(--color-gray-900);
+  --_hero-subtitle-color: var(--color-gray-700);
   margin-bottom: 32px;
 }
 
@@ -6,7 +8,7 @@
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--_hero-title-color);
   line-height: 28px;
 }
 
@@ -14,6 +16,13 @@
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
-  color: var(--color-text-secondary);
+  color: var(--_hero-subtitle-color);
   line-height: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero {
+    --_hero-title-color: var(--color-gray-100);
+    --_hero-subtitle-color: var(--color-gray-500);
+  }
 }

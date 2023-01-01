@@ -81,3 +81,9 @@ button {
 button {
     cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-gray-900);
+    }
+}

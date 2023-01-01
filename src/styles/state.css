@@ -24,6 +24,7 @@
 }
 
 #filter-family:checked ~ #app #filter-badge-family {
+  --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-blue);
   --_filter-foreground-x: calc(100% - 48px);
   --_filter-icon-color: var(--color-white);
@@ -32,6 +33,7 @@
 }
 
 #filter-romantic:checked ~ #app #filter-badge-romantic {
+  --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-blue);
   --_filter-foreground-x: calc(100% - 48px);
   --_filter-icon-color: var(--color-white);
@@ -40,6 +42,7 @@
 }
 
 #filter-pet:checked ~ #app #filter-badge-pet {
+  --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-blue);
   --_filter-foreground-x: calc(100% - 48px);
   --_filter-icon-color: var(--color-white);
