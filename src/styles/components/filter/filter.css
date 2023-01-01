@@ -1,4 +1,12 @@
 .filter {
+  --_filter-border-color: var(--color-gray);
+  --_filter-label-color: var(--color-text-primary);
+  --_filter-shadow-size: 1px;
+  --_filter-icon-color: var(--color-blue);
+  --_filter-icon-x: 0;
+  --_filter-foreground-color: var(--color-light-blue);
+  --_filter-foreground-x: 0;
+  --_filter-transition-duration: 150ms;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -8,6 +16,9 @@
   border-radius: 9999px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: inset 0 0 0 var(--_filter-shadow-size) var(--_filter-border-color);
+  transition-property: box-shadow;
+  transition-duration: var(--_filter-transition-duration);
 }
 
 .filter__background {
@@ -18,7 +29,6 @@
   width: 100%;
   height: 100%;
   border-radius: 9999px;
-  border: 1px solid var(--color-gray);
 }
 
 .filter__foreground {
@@ -29,13 +39,10 @@
   width: 100%;
   height: 100%;
   border-radius: 9999px;
-  background-color: var(--color-light-blue);
+  background-color: var(--_filter-foreground-color);
+  transform: translateX(var(--_filter-foreground-x));
   transition-property: background-color, transform;
-  transition-duration: 150ms;
-}
-
-.filter:hover .filter__foreground {
-  transform: translateX(calc(100% - 48px));
+  transition-duration: var(--_filter-transition-duration);
 }
 
 .filter__icon-box {
@@ -45,7 +52,7 @@
   display: flex;
   width: 48px;
   height: 100%;
-  color: var(--color-blue);
+  color: var(--_filter-icon-color);
   transition: color 150ms;
 }
 
@@ -53,6 +60,7 @@
   margin: auto;
   width: 20px;
   height: 20px;
+  transform: translateX(var(--_filter-icon-x));
   transition: transform 150ms;
 }
 
@@ -64,6 +72,6 @@
   padding-right: 12px;
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--_filter-label-color);
   transition: color 150ms;
 }
