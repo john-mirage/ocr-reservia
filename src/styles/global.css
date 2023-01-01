@@ -48,6 +48,12 @@ body {
     background-color: var(--color-white);
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark-9);
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -80,10 +86,4 @@ button {
 
 button {
     cursor: pointer;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--color-gray-900);
-    }
 }

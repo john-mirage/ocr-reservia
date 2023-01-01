@@ -1,12 +1,19 @@
 .filter-list {
+  --filter-list-title-color: var(--color-gray-9);
   margin-bottom: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter-list {
+    --filter-list-title-color: var(--color-gray-1);
+  }
 }
 
 .filter-list__title {
   margin-bottom: 16px;
   font-size: 18px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--filter-list-title-color);
 }
 
 .filter-list__row {

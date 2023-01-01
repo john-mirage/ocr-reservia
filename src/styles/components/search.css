@@ -1,4 +1,13 @@
 .search {
+  --_search-icon-background-color: var(--color-gray-2);
+  --_search-icon-color: var(--color-gray-9);
+  --_search-input-border-color: var(--color-gray-2);
+  --_search-input-text-color: var(--color-gray-8);
+  --_search-input-ring-color: var(--color-indigo-7);
+  --_search-input-placeholder-text-color: var(--color-gray-7);
+  --_search-button-background-color: var(--color-indigo-7);
+  --_search-button-background-hover-color: var(--color-indigo-5);
+  --_search-button-label-color: var(--color-gray-0);
   margin-bottom: 32px;
   position: relative;
   display: flex;
@@ -10,6 +19,20 @@
   height: 56px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .search {
+    --_search-icon-background-color: var(--color-dark-6);
+    --_search-icon-color: var(--color-gray-0);
+    --_search-input-border-color: var(--color-dark-6);
+    --_search-input-text-color: var(--color-gray-0);
+    --_search-input-ring-color: var(--color-indigo-5);
+    --_search-input-placeholder-text-color: var(--color-gray-6);
+    --_search-button-background-color: var(--color-indigo-7);
+    --_search-button-background-hover-color: var(--color-indigo-5);
+    --_search-button-label-color: var(--color-gray-0);
+  }
+}
+
 .search__icon-box {
   position: relative;
   z-index: 20;
@@ -19,8 +42,8 @@
   height: 100%;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  background-color: var(--color-light-gray);
-  color: var(--color-text-primary);
+  background-color: var(--_search-icon-background-color);
+  color: var(--_search-icon-color);
 }
 
 .search__icon {
@@ -39,16 +62,20 @@
   padding-left: 64px;
   padding-right: 72px;
   border-radius: 16px;
-  border: 1px solid var(--color-light-gray);
+  border: 1px solid var(--_search-input-border-color);
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: var(--_search-input-text-color);
+}
+
+.search__input::placeholder {
+  color: var(--_search-input-placeholder-text-color);
 }
 
 .search__input:focus-visible {
   outline-width: 1px;
   outline-offset: 6px;
-  outline-color: var(--color-blue);
+  outline-color: var(--_search-input-ring-color);
 }
 
 .search__button {
@@ -59,8 +86,8 @@
   width: 56px;
   height: 100%;
   border-radius: 16px;
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: var(--_search-button-background-color);
+  color: var(--_search-button-label-color);
 }
 
 .search__label {
@@ -95,7 +122,7 @@
 
 @media (hover: hover) {
   .search__button:hover {
-    background-color: var(--color-blue-hover);
+    background-color: var(--_search-button-background-hover-color);
   }
 }
 

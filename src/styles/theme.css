@@ -1,29 +1,39 @@
 :root {
   --font-family: 'Raleway';
 
-  --color-blue-700: hsl(228, 81%, 59%);
-  --color-blue-500: hsl(228, 94%, 67%);
-  --color-blue-100: hsl(225, 100%, 93%);
+  --color-white: #fff;
+  --color-black: #000;
 
-  --color-gray-900: hsl(210, 11%, 9%);
-  --color-gray-800: hsl(210, 10%, 13%);
-  --color-gray-700: hsl(210, 9%, 31%);
-  --color-gray-500: hsl(210, 11%, 71%);
-  --color-gray-300: hsl(210, 14%, 89%);
-  --color-gray-100: hsl(210, 17%, 95%);
+  --color-indigo-9: #364FC7;
+  --color-indigo-8: #3B5BDB;
+  --color-indigo-7: #4263EB;
+  --color-indigo-6: #4C6EF5;
+  --color-indigo-5: #5C7CFA;
+  --color-indigo-4: #748FFC;
+  --color-indigo-3: #91A7FF;
+  --color-indigo-2: #BAC8FF;
+  --color-indigo-1: #DBE4FF;
+  --color-indigo-0: #EDF2FF;
 
-  --color-white: hsl(0, 0%, 100%);
+  --color-dark-9: #101113;
+  --color-dark-8: #141517;
+  --color-dark-7: #1A1B1E;
+  --color-dark-6: #25262B;
+  --color-dark-5: #2C2E33;
+  --color-dark-4: #373A40;
+  --color-dark-3: #5C5F66;
+  --color-dark-2: #909296;
+  --color-dark-1: #A6A7AB;
+  --color-dark-0: #C1C2C5;
 
-  --color-blue: hsl(216, 100%, 49%);
-  --color-blue-hover: hsl(216, 100%, 59%);
-  --color-light-blue: hsl(216, 100%, 94%);
-
-  --color-gray: hsl(0, 0%, 85%);
-  --color-light-gray: hsl(0, 0%, 95%);
-
-  --color-text-primary: hsl(0, 0%, 10%);
-  --color-text-secondary: hsl(0, 0%, 30%);
-
-  --color-black: hsl(0, 0%, 10%);
-  --color-dark-gray: hsl(0, 0%, 30%);
+  --color-gray-9: #212529;
+  --color-gray-8: #343A40;
+  --color-gray-7: #495057;
+  --color-gray-6: #868E96;
+  --color-gray-5: #ADB5BD;
+  --color-gray-4: #CED4DA;
+  --color-gray-3: #DEE2E6;
+  --color-gray-2: #E9ECEF;
+  --color-gray-1: #F1F3F5;
+  --color-gray-0: #F8F9FA;
 }

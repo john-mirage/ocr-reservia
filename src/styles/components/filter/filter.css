@@ -1,10 +1,10 @@
 .filter {
-  --_filter-border-color: var(--color-gray);
-  --_filter-label-color: var(--color-text-primary);
+  --_filter-border-color: var(--color-gray-3);
+  --_filter-label-color: var(--color-gray-9);
   --_filter-shadow-size: 1px;
-  --_filter-icon-color: var(--color-blue);
+  --_filter-icon-color: var(--color-indigo-7);
   --_filter-icon-x: 0;
-  --_filter-foreground-color: var(--color-light-blue);
+  --_filter-foreground-color: var(--color-indigo-1);
   --_filter-foreground-x: 0;
   --_filter-transition-duration: 150ms;
   position: relative;
@@ -17,6 +17,15 @@
   overflow: hidden;
   cursor: pointer;
   box-shadow: inset 0 0 0 var(--_filter-shadow-size) var(--_filter-border-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .filter {
+    --_filter-border-color: var(--color-dark-6);
+    --_filter-label-color: var(--color-gray-3);
+    --_filter-icon-color: var(--color-indigo-5);
+    --_filter-foreground-color: var(--color-dark-6);
+  }
 }
 
 .filter__background {

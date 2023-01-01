@@ -1,5 +1,5 @@
 .header {
-  --header-login-color: var(--color-blue-700);
+  --header-login-color: var(--color-indigo-7);
   position: relative;
   z-index: 100;
   margin-bottom: 32px;
