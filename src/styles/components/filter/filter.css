@@ -76,6 +76,7 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--_filter-label-color);
+  user-select: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,5 +1,5 @@
 .header {
-  --header-login-color: var(--color-indigo-7);
+  --header-login-color: var(--color-indigo-6);
   position: relative;
   z-index: 100;
   margin-bottom: 32px;
@@ -38,6 +38,12 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--header-login-color);
+}
+
+@media (hover: hover) {
+  .header__login:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 768px) {
