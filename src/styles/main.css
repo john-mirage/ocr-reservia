@@ -14,7 +14,7 @@
 @import url("./components/filter/filter-info.css");
 @import url("./components/filter/filter-list.css");
 @import url("./components/filter/filter.css");
-@import url("./components/navigation/row-navigation.css");
-@import url("./components/navigation/main-navigation.css");
+@import url("./components/navigation/header-navigation.css");
+@import url("./components/navigation/footer-navigation.css");
 
 @import url("./state.css");
