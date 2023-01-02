@@ -8,15 +8,16 @@
   --_search-button-background-color: var(--color-indigo-7);
   --_search-button-background-hover-color: var(--color-indigo-5);
   --_search-button-label-color: var(--color-gray-0);
+  --_search-border-radius: 16px;
   margin-bottom: 32px;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: 428px;
   height: 56px;
+  border-radius: var(--_search-border-radius);
+  border: 1px solid var(--_search-input-border-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,35 +35,30 @@
 }
 
 .search__icon-box {
-  position: relative;
-  z-index: 20;
   flex: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 100%;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
+  border-top-left-radius: var(--_search-border-radius);
+  border-bottom-left-radius: var(--_search-border-radius);
   background-color: var(--_search-icon-background-color);
   color: var(--_search-icon-color);
 }
 
 .search__icon {
-  margin: auto;
   width: 20px;
   height: 20px;
 }
 
 .search__input {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
+  z-index: 20;
+  flex: 1;
   width: 100%;
   height: 100%;
-  padding-left: 72px;
-  padding-right: 72px;
-  border-radius: 16px;
-  border: 1px solid var(--_search-input-border-color);
+  padding-left: 16px;
+  padding-right: 16px;
   font-size: 16px;
   font-weight: 700;
   color: var(--_search-input-text-color);
@@ -72,20 +68,16 @@
   color: var(--_search-input-placeholder-text-color);
 }
 
-.search__input:focus-visible {
-  outline-width: 1px;
-  outline-offset: 6px;
-  outline-color: var(--_search-input-ring-color);
-}
-
 .search__button {
+  z-index: 10;
   flex: none;
-  position: relative;
-  z-index: 20;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 100%;
-  border-radius: 16px;
+  border-top-right-radius: var(--_search-border-radius);
+  border-bottom-right-radius: var(--_search-border-radius);
   background-color: var(--_search-button-background-color);
   color: var(--_search-button-label-color);
 }
@@ -95,17 +87,10 @@
 }
 
 @media screen and (min-width: 576px) {
-  .search__input {
-    padding-right: 144px;
-  }
-
   .search__button {
     padding-left: 16px;
     padding-right: 16px;
     width: 128px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    cursor: pointer;
   }
 
   .search__icon--search {
@@ -113,7 +98,6 @@
   }
   
   .search__label {
-    margin: auto;
     display: block;
     font-size: 16px;
     font-weight: 700;
