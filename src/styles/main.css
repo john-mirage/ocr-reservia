@@ -16,5 +16,6 @@
 @import url("./components/filter/filter.css");
 @import url("./components/navigation/header-navigation.css");
 @import url("./components/navigation/footer-navigation.css");
+@import url("./components/link.css");
 
 @import url("./state.css");

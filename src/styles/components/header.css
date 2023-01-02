@@ -37,18 +37,6 @@
   height: auto;
 }
 
-.header__login {
-  font-size: 1rem; /* 16px */
-  font-weight: 700;
-  color: var(--header-login-color);
-}
-
-@media (hover: hover) {
-  .header__login:hover {
-    text-decoration: underline;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header {
     flex-wrap: nowrap;

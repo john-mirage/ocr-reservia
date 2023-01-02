@@ -1,12 +1,10 @@
 .footer-navigation {
   --_footer-navigation-title-color: var(--color-gray-9);
-  --_footer-navigation-link-color: var(--color-gray-7);
 }
 
 @media (prefers-color-scheme: dark) {
   .footer-navigation {
     --_footer-navigation-title-color: var(--color-gray-3);
-    --_footer-navigation-link-color: var(--color-gray-5);
   }
 }
 
@@ -23,23 +21,4 @@
   font-size: 1.125rem; /* 18px */
   font-weight: 700;
   color: var(--_footer-navigation-title-color);
-}
-
-.footer-navigation__link {
-  font-size: 1rem; /* 16px */
-  font-weight: 500;
-  color: var(--_footer-navigation-link-color);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .footer-navigation__link {
-    transition: color 150ms;
-  }
-}
-
-@media (hover: hover) {
-  .footer-navigation__link:hover {
-    text-decoration: underline;
-    --_footer-navigation-link-color: var(--color-indigo-5);
-  }
 }

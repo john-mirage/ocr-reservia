@@ -1,7 +1,6 @@
 .card-list {
   --_card-list-background-color: var(--color-gray-1);
   --_card-list-text-color: var(--color-gray-9);
-  --_card-list-link-color: var(--color-gray-9);
   padding-top: 2rem; /* 32px */
   padding-bottom: 2rem; /* 32px */
 }
@@ -10,7 +9,6 @@
   .card-list {
     --_card-list-background-color: var(--color-dark-7);
     --_card-list-text-color: var(--color-gray-3);
-    --_card-list-link-color: var(--color-gray-3);
   }
 }
 
@@ -48,10 +46,6 @@
 
 .card-list__link {
   margin-top: 1.5rem; /* 24px */
-  display: inline-block;
-  font-size: 1rem; /* 16px */
-  font-weight: 700;
-  color: var(--_card-list-link-color);
 }
 
 @media screen and (min-width: 576px) {
@@ -78,18 +72,5 @@
 
   .card-list--activities {
     order: 3;
-  }
-}
-
-@media (hover: hover) {
-  .card-list__link:hover {
-    text-decoration: underline;
-    --_card-list-link-color: var(--color-indigo-5);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .card-list__link {
-    transition: color 150ms;
   }
 }
