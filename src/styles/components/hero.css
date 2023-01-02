@@ -1,7 +1,7 @@
 .hero {
   --_hero-title-color: var(--color-gray-9);
   --_hero-subtitle-color: var(--color-gray-7);
-  margin-bottom: 48px;
+  margin-bottom: 3rem; /* 48px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,17 +12,17 @@
 }
 
 .hero__title {
-  margin-bottom: 12px;
-  font-size: 24px;
+  margin-bottom: 0.75rem; /* 12px */
+  font-size: 1.5rem; /* 24px */
   font-weight: 700;
   color: var(--_hero-title-color);
-  line-height: 32px;
+  line-height: 2rem; /* 32px */
 }
 
 .hero__subtitle {
-  margin-bottom: 24px;
-  font-size: 16px;
+  margin-bottom: 1.5rem; /* 24px */
+  font-size: 1rem; /* 16px */
   font-weight: 400;
   color: var(--_hero-subtitle-color);
-  line-height: 24px;
+  line-height: 1.5rem; /* 24px */
 }

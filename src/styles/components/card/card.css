@@ -2,7 +2,7 @@
   --_card-background-color: var(--color-white);
   --_card-title-color: var(--color-gray-9);
   --_card-subtitle-color: var(--color-gray-7);
-  --_card-border-radius: 12px;
+  --_card-border-radius: 0.75rem; /* 12px */
   position: relative;
   z-index: 90;
   width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .card--with-border {
-  border: 4px solid var(--_card-background-color);
+  border: 0.25rem solid var(--_card-background-color); /* 4px */
 }
 
 /*------------------------------------*\
@@ -71,7 +71,7 @@
 .card__body {
   display: flex;
   flex-direction: column;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem; /* 12px 20px */
 }
 
 .card__image {
@@ -84,17 +84,17 @@
 }
 
 .card__title {
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5rem; /* 24px */
   color: var(--_card-title-color);
 }
 
 .card__subtitle {
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: 0.5rem; /* 8px */
+  font-size: 0.875rem; /* 14px */
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem; /* 24px */
   color: var(--_card-subtitle-color);
 }
 
@@ -111,11 +111,11 @@
   .card--row {
     flex-direction: row;
     align-items: stretch;
-    min-height: 132px;
+    min-height: 8.25rem; /* 132px */
   }
 
   .card--row .card__header {
-    width: 128px;
+    width: 8rem; /* 128px */
     padding-top: 0;
   }
 }

@@ -2,7 +2,7 @@
   --_grid-overlay-color: var(--color-white);
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 24px;
+  gap: 1.5rem; /* 24px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@
   height: 100%;
   background-color: var(--_grid-overlay-color);
   opacity: 0.8;
-  border-radius: 12px;
+  border-radius: 0.75rem; /* 12px */
 }
 
 @media screen and (min-width: 576px) {
@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 1412px) {
   .grid {
-    gap: 32px;
+    gap: 2rem; /* 32px */
   }
 
   .grid--main {

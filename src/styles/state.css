@@ -5,7 +5,7 @@
 #filter-economic:checked ~ #app #filter-badge-economic {
   --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-indigo-7);
-  --_filter-foreground-x: calc(100% - 48px);
+  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   --_filter-icon-color: var(--color-gray-0);
   --_filter-icon-x: 50%;
   --_filter-label-color: var(--color-gray-0);
@@ -14,7 +14,7 @@
 #filter-family:checked ~ #app #filter-badge-family {
   --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-indigo-7);
-  --_filter-foreground-x: calc(100% - 48px);
+  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   --_filter-icon-color: var(--color-gray-0);
   --_filter-icon-x: 50%;
   --_filter-label-color: var(--color-gray-0);
@@ -23,7 +23,7 @@
 #filter-romantic:checked ~ #app #filter-badge-romantic {
   --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-indigo-7);
-  --_filter-foreground-x: calc(100% - 48px);
+  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   --_filter-icon-color: var(--color-gray-0);
   --_filter-icon-x: 50%;
   --_filter-label-color: var(--color-gray-0);
@@ -32,7 +32,7 @@
 #filter-pet:checked ~ #app #filter-badge-pet {
   --_filter-shadow-size: 0;
   --_filter-foreground-color: var(--color-indigo-7);
-  --_filter-foreground-x: calc(100% - 48px);
+  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   --_filter-icon-color: var(--color-gray-0);
   --_filter-icon-x: 50%;
   --_filter-label-color: var(--color-gray-0);
@@ -42,25 +42,25 @@
   #filter-economic ~ #app #filter-badge-economic:hover {
     --_filter-foreground-color: var(--color-indigo-1);
     --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 48px);
+    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   }
   
   #filter-family ~ #app #filter-badge-family:hover {
     --_filter-foreground-color: var(--color-indigo-1);
     --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 48px);
+    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   }
   
   #filter-romantic ~ #app #filter-badge-romantic:hover {
     --_filter-foreground-color: var(--color-indigo-1);
     --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 48px);
+    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   }
   
   #filter-pet ~ #app #filter-badge-pet:hover {
     --_filter-foreground-color: var(--color-indigo-1);
     --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 48px);
+    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
   }
 
   @media (prefers-color-scheme: dark) {

@@ -2,7 +2,7 @@
   --_filter-info-icon-color: var(--color-indigo-7);
   --_filter-info-icon-border-color: var(--color-gray-3);
   --_filter-info-result-color: var(--color-gray-9);
-  margin-bottom: 48px;
+  margin-bottom: 3rem; /* 48px */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -18,11 +18,11 @@
 }
 
 .filter-info__icon-box {
-  margin-right: 8px;
+  margin-right: 0.5rem; /* 8px */
   flex: none;
   display: flex;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
   border-radius: 9999px;
   border: 1px solid var(--_filter-info-icon-border-color);
   color: var(--_filter-info-icon-color);
@@ -30,14 +30,14 @@
 
 .filter-info__icon {
   margin: auto;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem; /* 12px */
+  height: 0.75rem; /* 12px */
 }
 
 .filter-info__result {
   flex: 1 1 0;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem; /* 24px */
   color: var(--_filter-info-result-color);
 }
