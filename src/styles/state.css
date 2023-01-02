@@ -5,10 +5,15 @@
 #places:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(0);}
 #activities:target ~ .fake-navigation > .fake-navigation__line {transform: translateX(100%);}
 
-#places:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-blue);}
-#places:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-text-primary);}
-#activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-text-primary);}
-#activities:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-blue);}
+#places:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-indigo-5);}
+#places:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-gray-9);}
+#activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-gray-9);}
+#activities:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-indigo-5);}
+
+@media (prefers-color-scheme: dark) {
+  #places:target ~ .fake-navigation > .fake-navigation__section--activities {color: var(--color-gray-3);}
+  #activities:target ~ .fake-navigation > .fake-navigation__section--places {color: var(--color-gray-3);}
+}
 
 /*------------------------------------*\
   #filters
@@ -95,7 +100,7 @@
 /* Initial state */
 #app #places .grid__item > .grid__overlay {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* if all not checked */

@@ -1,5 +1,5 @@
 .grid {
-  --_grid-overlay-color: var(--color-gray-0);
+  --_grid-overlay-color: var(--color-white);
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 24px;
@@ -7,7 +7,7 @@
 
 @media (prefers-color-scheme: dark) {
   .grid {
-    --_grid-overlay-color: var(--color-gray-9);
+    --_grid-overlay-color: var(--color-dark-6);
   }
 }
 

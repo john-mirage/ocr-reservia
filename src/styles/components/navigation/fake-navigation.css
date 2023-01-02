@@ -25,7 +25,7 @@
 }
 
 .fake-navigation__section--places {
-  color: var(--color-blue);
+  color: var(--color-indigo-5);
 }
 
 .fake-navigation__line {
@@ -34,7 +34,7 @@
   left: 0;
   width: 50%;
   height: 4px;
-  background-color: var(--color-blue);
+  background-color: var(--color-indigo-5);
 }
 
 @media screen and (min-width: 576px) {
