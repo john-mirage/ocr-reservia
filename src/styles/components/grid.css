@@ -24,7 +24,7 @@
   height: 100%;
   background-color: var(--_grid-overlay-color);
   opacity: 0.8;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 @media screen and (min-width: 576px) {
@@ -52,6 +52,10 @@
 }
 
 @media screen and (min-width: 1412px) {
+  .grid {
+    gap: 32px;
+  }
+
   .grid--main {
     grid-template-columns: 1fr auto;
   }

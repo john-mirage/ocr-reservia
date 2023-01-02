@@ -8,7 +8,7 @@
   --_search-button-background-color: var(--color-indigo-7);
   --_search-button-background-hover-color: var(--color-indigo-5);
   --_search-button-label-color: var(--color-gray-0);
-  --_search-border-radius: 16px;
+  --_search-border-radius: 12px;
   margin-bottom: 32px;
   position: relative;
   display: flex;
