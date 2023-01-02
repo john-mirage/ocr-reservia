@@ -45,13 +45,6 @@ body {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         "Noto Color Emoji";
-    background-color: var(--color-white);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--color-dark-9);
-    }
 }
 
 a {
