@@ -1,5 +1,9 @@
 ![Reservia banner](/public/social-media.png)
 
-# Reservia
+Openclassrooms challenge solution for: Reservia (Vacation planning company with accommodations and activities)
 
-CSS excercise.
+## Start the project
+
+```
+pnpm dev
+```
