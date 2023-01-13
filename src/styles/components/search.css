@@ -9,7 +9,7 @@
   --_search-button-background-hover-color: var(--color-indigo-5);
   --_search-button-label-color: var(--color-gray-0);
   --_search-border-radius: 0.75rem; /* 12px */
-  margin-bottom: 2rem; /* 32px */
+  margin-bottom: 3rem; /* 48px */
   position: relative;
   display: flex;
   flex-direction: row;

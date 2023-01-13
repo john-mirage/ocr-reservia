@@ -60,10 +60,10 @@
     </symbol>
   </svg>
 
-  <input class="page__input" id="filter-economic" type="checkbox">
-  <input class="page__input" id="filter-family" type="checkbox">
-  <input class="page__input" id="filter-romantic" type="checkbox">
-  <input class="page__input" id="filter-pet" type="checkbox">
+  <input class="page__input" id="filter-economic" type="checkbox" aria-labelledby="economic-filter-label">
+  <input class="page__input" id="filter-family" type="checkbox" aria-labelledby="family-fitler-label">
+  <input class="page__input" id="filter-romantic" type="checkbox" aria-labelledby="romantic-filter-label">
+  <input class="page__input" id="filter-pet" type="checkbox" aria-labelledby="pet-filter-label">
 
   <!-- container -->
   <div class="container" id="app">
@@ -93,28 +93,29 @@
     </header>
     
     <!-- hero -->
-    <div class="hero">
+    <section class="hero">
       <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
-      <!-- search -->
-      <div class="search">
-        <div class="search__icon-box">
-          <svg class="search__icon" fill="currentColor">
-            <use href="#icon-map"/>
-          </svg>
-        </div>
-        <input class="search__input" type="text" placeholder="Marseille, France">
-        <button class="search__button">
-          <svg class="search__icon search__icon--search" fill="currentColor">
-            <use href="#icon-search"/>
-          </svg>
-          <span class="search__label">Rechercher</span>
-        </button>
+    </section>
+
+    <!-- search -->
+    <form class="search">
+      <div class="search__icon-box">
+        <svg class="search__icon" fill="currentColor">
+          <use href="#icon-map"/>
+        </svg>
       </div>
-    </div>
+      <input class="search__input" type="search" name="search" required placeholder="Marseille, France" aria-labelledby="search-input-label">
+      <button class="search__button">
+        <svg class="search__icon search__icon--search" fill="currentColor">
+          <use href="#icon-search"/>
+        </svg>
+        <span class="search__label" id="search-input-label">Rechercher</span>
+      </button>
+    </form>
 
     <!-- filter list -->
-    <div class="filter-list">
+    <section class="filter-list">
       <h2 class="filter-list__title">Filtres</h2>
       <ul class="filter-list__row" role="list">
         <li class="filter-list__item">
@@ -127,7 +128,7 @@
                 <use href="#icon-money"/>
               </svg>
             </span>
-            <span class="filter__label">Economique</span>
+            <span class="filter__label" id="economic-filter-label">Economique</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -140,7 +141,7 @@
                 <use href="#icon-family"/>
               </svg>
             </span>
-            <span class="filter__label">Familial</span>
+            <span class="filter__label" id="family-filter-label">Familial</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -153,7 +154,7 @@
                 <use href="#icon-heart"/>
               </svg>
             </span>
-            <span class="filter__label">Romantique</span>
+            <span class="filter__label" id="romantic-filter-label">Romantique</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -166,26 +167,27 @@
                 <use href="#icon-dog"/>
               </svg>
             </span>
-            <span class="filter__label">Animaux autorisés</span>
+            <span class="filter__label" id="pet-filter-label">Animaux autorisés</span>
           </label>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <!-- filter info -->
-    <div class="filter-info">
-      <div class="filter-info__icon-box">
-        <svg class="filter-info__icon" fill="currentColor">
+    <!-- filter result -->
+    <section class="filter-result">
+      <h2 class="filter-result__title">Résultats</h2>
+      <div class="filter-result__icon-box">
+        <svg class="filter-result__icon" fill="currentColor">
           <use href="#icon-info"/>
         </svg>
       </div>
-      <p class="filter-info__result">Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>
+      <p class="filter-result__count">Plus de 500 logements sont disponibles dans cette ville</p>
+    </section>
 
     <!-- grid -->
     <div class="grid grid--main">
       <!-- card list -->
-      <div class="card-list card-list--popular">
+      <section class="card-list card-list--popular">
         <div class="card-list__row">
           <h2 class="card-list__title">Les plus populaires</h2>
           <svg class="card-list__icon" fill="currentColor">
@@ -196,265 +198,295 @@
         <ul class="grid grid--popular">
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--row card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/popular/hotel-le-soleil-du-matin.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel Le soleil du matin</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">128€</span></p>
-                <div class="rating rating--5-of-5 card__rating">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--row card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/popular/hotel-le-soleil-du-matin.webp" alt="Hotel le soleil du matin" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel Le soleil du matin</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">128€</span></p>
+                  <div class="rating rating--5-of-5 card__rating">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--row card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Au coeur de l'eau chambres d'hôtes</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">71€</span></p>
-                <div class="rating rating--4-of-5 card__rating">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--row card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp" alt="Au coeur de l'eau chambres d'hôtes" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Au coeur de l'eau chambres d'hôtes</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">71€</span></p>
+                  <div class="rating rating--4-of-5 card__rating">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--row card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/popular/hotel-tout-bleu-et-blanc.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel tout bleu et blanc</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">68€</span></p>
-                <div class="rating rating--4-of-5 card__rating">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--row card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/popular/hotel-tout-bleu-et-blanc.webp" alt="Hôtel tout bleu et blanc" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel tout bleu et blanc</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">68€</span></p>
+                  <div class="rating rating--4-of-5 card__rating">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
         </ul>
-      </div>
+      </section>
       <!-- card list -->
-      <div class="card-list card-list--places" id="places">
+      <section class="card-list card-list--places" id="places">
         <h2 class="card-list__title">Hébergements à Marseille</h2>
         <!-- grid -->
         <ul class="grid grid--places">
           <li class="grid__item grid__item--with-overlay" data-filter="economic family">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Auberge la cannebière</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">25€</span></p>
-                <div class="rating rating--4-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="Auberge la cannebière" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Auberge la cannebière</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">25€</span></p>
+                  <div class="rating rating--4-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
           <li class="grid__item grid__item--with-overlay" data-filter="family pet">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel du port</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">52€</span></p>
-                <div class="rating rating--5-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="Hôtel du port" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel du port</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">52€</span></p>
+                  <div class="rating rating--5-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
           <li class="grid__item grid__item--with-overlay" data-filter="romantic pet">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel Les mouettes</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">76€</span></p>
-                <div class="rating rating--4-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="Hôtel Les mouettes" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel Les mouettes</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">76€</span></p>
+                  <div class="rating rating--4-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
           <li class="grid__item grid__item--with-overlay" data-filter="romantic economic">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel de la mer</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">46€</span></p>
-                <div class="rating rating--3-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="Hôtel de la mer" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel de la mer</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">46€</span></p>
+                  <div class="rating rating--3-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
           <li class="grid__item grid__item--with-overlay" data-filter="economic family">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Auberge Le panier</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">23€</span></p>
-                <div class="rating rating--4-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="Auberge Le panier" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Auberge Le panier</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">23€</span></p>
+                  <div class="rating rating--4-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
           <li class="grid__item grid__item--with-overlay" data-filter="pet romantic">
             <!-- card -->
-            <a class="card card--column card--with-border" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Hôtel chez Amina</h3>
-                <p class="card__subtitle">Nuit à partir de <span class="card__price">96€</span></p>
-                <div class="rating rating--5-of-5">
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
-                  <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+            <article class="card card--column card--with-border">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="Hôtel chez Amina" draggable="false">
                 </div>
-              </div>
-            </a>
+                <div class="card__body">
+                  <h3 class="card__title">Hôtel chez Amina</h3>
+                  <p class="card__subtitle">Nuit à partir de <span class="card__price">96€</span></p>
+                  <div class="rating rating--5-of-5">
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                    <svg class="rating__icon" fill="currentColor"><use href="#icon-star"/></svg>
+                  </div>
+                </div>
+              </a>
+            </article>
             <div class="grid__overlay"></div>
           </li>
         </ul>
         <a href="#" class="card-list__link link link--bold link--default">Afficher plus</a>
-      </div>
+      </section>
       <!-- card list -->
-      <div class="card-list card-list--activities grid__item grid__item--col-span" id="activities">
+      <section class="card-list card-list--activities grid__item grid__item--col-span" id="activities">
         <h2 class="card-list__title">Activités à Marseille</h2>
         <!-- grid -->
         <ul class="grid grid--activities">
           <li class="grid__item grid__item--row-span">
             <!-- card -->
-            <a class="card card--column card--full-height" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/vieux-port.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Vieux Port</h3>
-              </div>
-            </a>
+            <article class="card card--column card--full-height">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/vieux-port.webp" alt="Vieux Port" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Vieux Port</h3>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--column" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/fort-de-pomegues.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Fort de Pomègues</h3>
-              </div>
-            </a>
+            <article class="card card--column">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/fort-de-pomegues.webp" alt="Fort de Pomègues" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Fort de Pomègues</h3>
+                </div>
+              </a>
+            </article>
           </li>
           
           <li class="grid__item grid__item--row-span">
             <!-- card -->
-            <a class="card card--column card--full-height" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/parc-national-des-calanques.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Parc National des Calanques</h3>
-              </div>
-            </a>
+            <article class="card card--column card--full-height">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/parc-national-des-calanques.webp" alt="Parc National des Calanques" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Parc National des Calanques</h3>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--column" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/notre-dame-de-la-garde.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Notre Dame De La Garde</h3>
-              </div>
-            </a>
+            <article class="card card--column">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/notre-dame-de-la-garde.webp" alt="Notre Dame De La Garde" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Notre Dame De La Garde</h3>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--column" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/iles-du-frioul.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Îles du Frioul</h3>
-              </div>
-            </a>
+            <article class="card card--column">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/iles-du-frioul.webp" alt="Îles du Frioul" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Îles du Frioul</h3>
+                </div>
+              </a>
+            </article>
           </li>
           <li class="grid__item">
             <!-- card -->
-            <a class="card card--column" href="#">
-              <div class="card__header">
-                <img class="card__image" src="/src/images/activities/parc-longchamp.webp" alt="" draggable="false">
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Parc Longchamp</h3>
-              </div>
-            </a>
+            <article class="card card--column">
+              <a class="card__link" href="#">
+                <div class="card__header">
+                  <img class="card__image" src="/src/images/activities/parc-longchamp.webp" alt="Parc Longchamp" draggable="false">
+                </div>
+                <div class="card__body">
+                  <h3 class="card__title">Parc Longchamp</h3>
+                </div>
+              </a>
+            </article>
           </li>
         </ul>
-      </div>
+      </section>
     </div>
   </div>
 

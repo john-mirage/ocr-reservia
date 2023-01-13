@@ -30,17 +30,20 @@
   #card-row
 \*------------------------------------*/
 
-.card--row {
+.card--row >
+.card__link {
   display: flex;
   flex-direction: column;
 }
 
-.card--row .card__header {
+.card--row
+.card__header {
   flex: none;
   width: 100%;
 }
 
-.card--row .card__body {
+.card--row
+.card__body {
   flex: 1 1 0;
 }
 
@@ -48,17 +51,20 @@
   #card-column
 \*------------------------------------*/
 
-.card--column {
+.card--column >
+.card__link {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
 }
 
-.card--column .card__header {
+.card--column
+.card__header {
   flex: 1 1 0;
 }
 
-.card--column .card__body {
+.card--column
+.card__body {
   flex: none;
 }
 
@@ -108,26 +114,31 @@
 }
 
 @media screen and (min-width: 375px) {
-  .card--row {
+  .card--row
+  .card__link {
     flex-direction: row;
     align-items: stretch;
     min-height: 8.25rem; /* 132px */
   }
 
-  .card--row .card__header {
+  .card--row
+  .card__header {
     width: 8rem; /* 128px */
     padding-top: 0;
   }
 }
 
 @media screen and (min-width: 1412px) {
-  .card--full-height {
+  .card--full-height,
+  .card--full-height
+  .card__link {
     height: 100%;
   }
 }
 
 @media (hover: hover) {
-  .card:hover .card__image {
+  .card:hover
+  .card__image {
     transform: scale(1.05);
   }
 }
