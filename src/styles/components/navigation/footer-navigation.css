@@ -1,11 +1,5 @@
 .footer-navigation {
-  --_footer-navigation-title-color: var(--color-gray-9);
-}
-
-@media (prefers-color-scheme: dark) {
-  .footer-navigation {
-    --_footer-navigation-title-color: var(--color-gray-3);
-  }
+  --_footer-navigation-title-color: var(--color-on-surface);
 }
 
 .footer-navigation__item {

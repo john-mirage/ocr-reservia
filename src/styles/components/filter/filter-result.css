@@ -1,20 +1,13 @@
 .filter-result {
-  --_filter-result-icon-color: var(--color-indigo-7);
-  --_filter-result-icon-border-color: var(--color-gray-3);
-  --_filter-result-count-color: var(--color-gray-9);
+  --_filter-result-icon-color: var(--color-primary);
+  --_filter-result-icon-border-color: var(--color-outline);
+  --_filter-result-count-color: var(--color-on-surface);
+
   margin-bottom: 3rem; /* 48px */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-@media (prefers-color-scheme: dark) {
-  .filter-result {
-    --_filter-result-icon-color: var(--color-indigo-5);
-    --_filter-result-icon-border-color: var(--color-dark-4);
-    --_filter-result-count-color: var(--color-gray-3);
-  }
 }
 
 .filter-result__title {

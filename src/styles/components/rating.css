@@ -1,18 +1,12 @@
 .rating {
-  --_rating-filled-star-color: var(--color-indigo-7);
-  --_rating-empty-star-color: var(--color-gray-3);
+  --_rating-filled-star-color: var(--color-primary);
+  --_rating-empty-star-color: var(--color-outline-variant);
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 1px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .rating {
-    --_rating-filled-star-color: var(--color-indigo-5);
-    --_rating-empty-star-color: var(--color-dark-3);
-  }
 }
 
 .rating__icon {

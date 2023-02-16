@@ -1,14 +1,7 @@
 .hero {
-  --_hero-title-color: var(--color-gray-9);
-  --_hero-subtitle-color: var(--color-gray-7);
+  --_hero-title-color: var(--color-on-surface);
+  --_hero-subtitle-color: var(--color-on-surface-variant);
   margin-bottom: 1.5rem; /* 24px */
-}
-
-@media (prefers-color-scheme: dark) {
-  .hero {
-    --_hero-title-color: var(--color-gray-3);
-    --_hero-subtitle-color: var(--color-gray-5);
-  }
 }
 
 .hero__title {

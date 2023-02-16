@@ -1,12 +1,6 @@
 .filter-list {
-  --filter-list-title-color: var(--color-gray-9);
+  --filter-list-title-color: var(--color-on-surface);
   margin-bottom: 1rem; /* 16px */
-}
-
-@media (prefers-color-scheme: dark) {
-  .filter-list {
-    --filter-list-title-color: var(--color-gray-1);
-  }
 }
 
 .filter-list__title {

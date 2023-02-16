@@ -1,14 +1,9 @@
 .grid {
-  --_grid-overlay-color: var(--color-white);
+  --_grid-overlay-color: var(--color-surface-2);
+  
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1.5rem; /* 24px */
-}
-
-@media (prefers-color-scheme: dark) {
-  .grid {
-    --_grid-overlay-color: var(--color-dark-6);
-  }
 }
 
 .grid__item--with-overlay {

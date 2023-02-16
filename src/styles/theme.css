@@ -1,39 +1,108 @@
 :root {
-  --font-family: 'Raleway';
+  --font-stack-fallback: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-stack: "Raleway", var(--font-stack-fallback);
 
-  --color-white: #fff;
-  --color-black: #000;
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
 
-  --color-indigo-9: #364FC7;
-  --color-indigo-8: #3B5BDB;
-  --color-indigo-7: #4263EB;
-  --color-indigo-6: #4C6EF5;
-  --color-indigo-5: #5C7CFA;
-  --color-indigo-4: #748FFC;
-  --color-indigo-3: #91A7FF;
-  --color-indigo-2: #BAC8FF;
-  --color-indigo-1: #DBE4FF;
-  --color-indigo-0: #EDF2FF;
+  --color-indigo-9: hsl(230, 57%, 50%);
+  --color-indigo-8: hsl(228, 69%, 55%);
+  --color-indigo-7: hsl(228, 81%, 59%);
+  --color-indigo-6: hsl(228, 89%, 63%);
+  --color-indigo-5: hsl(228, 94%, 67%);
+  --color-indigo-4: hsl(228, 96%, 72%);
+  --color-indigo-3: hsl(228, 100%, 78%);
+  --color-indigo-2: hsl(228, 100%, 86%);
+  --color-indigo-1: hsl(225, 100%, 93%);
+  --color-indigo-0: hsl(223, 100%, 96%);
 
-  --color-dark-9: #101113;
-  --color-dark-8: #141517;
-  --color-dark-7: #1A1B1E;
-  --color-dark-6: #25262B;
-  --color-dark-5: #2C2E33;
-  --color-dark-4: #373A40;
-  --color-dark-3: #5C5F66;
-  --color-dark-2: #909296;
-  --color-dark-1: #A6A7AB;
-  --color-dark-0: #C1C2C5;
+  --color-dark-9: hsl(220, 9%, 7%);
+  --color-dark-8: hsl(220, 7%, 9%);
+  --color-dark-7: hsl(225, 7%, 14%);
+  --color-dark-6: hsl(230, 8%, 16%);
+  --color-dark-5: hsl(223, 7%, 19%);
+  --color-dark-4: hsl(220, 8%, 23%);
+  --color-dark-3: hsl(222, 5%, 38%);
+  --color-dark-2: hsl(220, 3%, 58%);
+  --color-dark-1: hsl(228, 3%, 66%);
+  --color-dark-0: hsl(225, 3%, 76%);
 
-  --color-gray-9: #212529;
-  --color-gray-8: #343A40;
-  --color-gray-7: #495057;
-  --color-gray-6: #868E96;
-  --color-gray-5: #ADB5BD;
-  --color-gray-4: #CED4DA;
-  --color-gray-3: #DEE2E6;
-  --color-gray-2: #E9ECEF;
-  --color-gray-1: #F1F3F5;
-  --color-gray-0: #F8F9FA;
+  --color-gray-9: hsl(210, 11%, 15%);
+  --color-gray-8: hsl(210, 10%, 23%);
+  --color-gray-7: hsl(210, 9%, 31%);
+  --color-gray-6: hsl(210, 7%, 56%);
+  --color-gray-5: hsl(210, 11%, 71%);
+  --color-gray-4: hsl(210, 14%, 83%);
+  --color-gray-3: hsl(210, 14%, 89%);
+  --color-gray-2: hsl(210, 16%, 93%);
+  --color-gray-1: hsl(210, 17%, 96%);
+  --color-gray-0: hsl(210, 17%, 98%);
+
+  --color-primary-light: var(--color-indigo-9);
+  --color-primary-hover-light: var(--color-indigo-7);
+  --color-on-primary-light: var(--color-white);
+  --color-primary-container-light: var(--color-indigo-1);
+  --color-background-light: var(--color-white);
+  --color-on-background-light: var(--color-gray-9);
+  --color-surface-light: var(--color-white);
+  --color-surface-1-light: var(--color-gray-1);
+  --color-surface-2-light: var(--color-white);
+  --color-on-surface-light: var(--color-gray-9);
+  --color-surface-variant-light: var(--color-gray-3);
+  --color-on-surface-variant-light: var(--color-gray-7);
+  --color-outline-light: var(--color-gray-3);
+  --color-outline-variant-light: var(--color-gray-6);
+
+  --color-primary-dark: var(--color-indigo-3);
+  --color-primary-hover-dark: var(--color-indigo-2);
+  --color-on-primary-dark: var(--color-gray-9);
+  --color-primary-container-dark: var(--color-dark-5);
+  --color-background-dark: var(--color-dark-9);
+  --color-on-background-dark: var(--color-gray-3);
+  --color-surface-dark: var(--color-dark-9);
+  --color-surface-1-dark: var(--color-dark-8);
+  --color-surface-2-dark: var(--color-dark-7);
+  --color-on-surface-dark: var(--color-gray-3);
+  --color-surface-variant-dark: var(--color-dark-6);
+  --color-on-surface-variant-dark: var(--color-gray-5);
+  --color-outline-dark: var(--color-dark-5);
+  --color-outline-variant-dark: var(--color-dark-3);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --color-primary: var(--color-primary-light);
+    --color-primary-hover: var(--color-primary-hover-light);
+    --color-on-primary: var(--color-on-primary-light);
+    --color-primary-container: var(--color-primary-container-light);
+    --color-background: var(--color-background-light);
+    --color-on-background: var(--color-on-background-light);
+    --color-surface: var(--color-surface-light);
+    --color-surface-1: var(--color-surface-1-light);
+    --color-surface-2: var(--color-surface-2-light);
+    --color-on-surface: var(--color-on-surface-light);
+    --color-surface-variant: var(--color-surface-variant-light);
+    --color-on-surface-variant: var(--color-on-surface-variant-light);
+    --color-outline: var(--color-outline-light);
+    --color-outline-variant: var(--color-outline-variant-light);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: var(--color-primary-dark);
+    --color-primary-hover: var(--color-primary-hover-dark);
+    --color-on-primary: var(--color-on-primary-dark);
+    --color-primary-container: var(--color-primary-container-dark);
+    --color-background: var(--color-background-dark);
+    --color-on-background: var(--color-on-background-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-surface-1: var(--color-surface-1-dark);
+    --color-surface-2: var(--color-surface-2-dark);
+    --color-on-surface: var(--color-on-surface-dark);
+    --color-surface-variant: var(--color-surface-variant-dark);
+    --color-on-surface-variant: var(--color-on-surface-variant-dark);
+    --color-outline: var(--color-outline-dark);
+    --color-outline-variant: var(--color-outline-variant-dark);
+  }
 }

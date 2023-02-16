@@ -1,15 +1,9 @@
 .card-list {
-  --_card-list-background-color: var(--color-gray-1);
-  --_card-list-text-color: var(--color-gray-9);
+  --_card-list-background-color: var(--color-surface-1);
+  --_card-list-text-color: var(--color-on-surface);
+
   padding-top: 2rem; /* 32px */
   padding-bottom: 2rem; /* 32px */
-}
-
-@media (prefers-color-scheme: dark) {
-  .card-list {
-    --_card-list-background-color: var(--color-dark-7);
-    --_card-list-text-color: var(--color-gray-3);
-  }
 }
 
 .card-list--activities {

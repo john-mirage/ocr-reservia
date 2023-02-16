@@ -1,14 +1,15 @@
 .search {
-  --_search-icon-background-color: var(--color-gray-2);
-  --_search-icon-color: var(--color-gray-9);
-  --_search-input-border-color: var(--color-gray-2);
-  --_search-input-text-color: var(--color-gray-8);
-  --_search-input-ring-color: var(--color-indigo-7);
+  --_search-icon-background-color: var(--color-outline);
+  --_search-icon-color: var(--color-on-surface-variant);
+  --_search-input-border-color: var(--color-outline);
+  --_search-input-text-color: var(--color-on-surface);
+  --_search-input-ring-color: var(--color-primary);
   --_search-input-placeholder-text-color: var(--color-gray-7);
-  --_search-button-background-color: var(--color-indigo-7);
-  --_search-button-background-hover-color: var(--color-indigo-5);
-  --_search-button-label-color: var(--color-gray-0);
+  --_search-button-background-color: var(--color-primary);
+  --_search-button-background-hover-color: var(--color-primary-hover);
+  --_search-button-label-color: var(--color-on-primary);
   --_search-border-radius: 0.75rem; /* 12px */
+
   margin-bottom: 3rem; /* 48px */
   position: relative;
   display: flex;
@@ -16,20 +17,6 @@
   width: 100%;
   max-width: 26.75rem; /* 428px */
   height: 3.5rem; /* 56px */
-}
-
-@media (prefers-color-scheme: dark) {
-  .search {
-    --_search-icon-background-color: var(--color-dark-6);
-    --_search-icon-color: var(--color-gray-0);
-    --_search-input-border-color: var(--color-dark-6);
-    --_search-input-text-color: var(--color-gray-0);
-    --_search-input-ring-color: var(--color-indigo-5);
-    --_search-input-placeholder-text-color: var(--color-gray-6);
-    --_search-button-background-color: var(--color-indigo-7);
-    --_search-button-background-hover-color: var(--color-indigo-5);
-    --_search-button-label-color: var(--color-gray-0);
-  }
 }
 
 .search__icon-box {

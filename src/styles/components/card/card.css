@@ -1,7 +1,7 @@
 .card {
-  --_card-background-color: var(--color-white);
-  --_card-title-color: var(--color-gray-9);
-  --_card-subtitle-color: var(--color-gray-7);
+  --_card-background-color: var(--color-surface-2);
+  --_card-title-color: var(--color-on-surface);
+  --_card-subtitle-color: var(--color-on-surface-variant);
   --_card-border-radius: 0.75rem; /* 12px */
   position: relative;
   z-index: 90;
@@ -12,14 +12,6 @@
     0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
   overflow: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  .card {
-    --_card-background-color: var(--color-dark-6);
-    --_card-title-color: var(--color-gray-3);
-    --_card-subtitle-color: var(--color-gray-5);
-  }
 }
 
 .card--with-border {

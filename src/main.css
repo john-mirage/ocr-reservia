@@ -1,5 +1,5 @@
 @import url("@styles/theme.css");
-@import url("@styles/global.css");
+@import url("@styles/globals.css");
 
 @import url("@styles/components/container.css");
 @import url("@styles/components/footer.css");
@@ -18,4 +18,4 @@
 @import url("@styles/components/navigation/footer-navigation.css");
 @import url("@styles/components/link.css");
 
-@import url("@styles/state.css");
+@import url("@styles/states.css");

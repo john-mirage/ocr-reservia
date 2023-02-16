@@ -1,12 +1,7 @@
 .footer {
-  --_footer-background-color: var(--color-gray-1);
+  --_footer-background-color: var(--color-surface-1);
+  
   padding-top: 3rem; /* 48px */
   padding-bottom: 3rem; /* 48px */
   background-color: var(--_footer-background-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .footer {
-    --_footer-background-color: var(--color-dark-7);
-  }
 }

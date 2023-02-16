@@ -1,7 +1,8 @@
 .link {
     --_link-transition-duration: 125ms;
-    --_link-underline-color: var(--color-indigo-6);
-    --_link-label-hover-color: var(--color-indigo-6);
+    --_link-underline-color: var(--color-primary);
+    --_link-label-hover-color: var(--color-primary);
+
     position: relative;
     display: inline-block;
     font-size: 1rem; /* 16px */
@@ -11,11 +12,11 @@
 }
 
 .link--default {
-    --_link-label-color: var(--color-gray-7);
+    --_link-label-color: var(--color-on-surface-variant);
 }
 
 .link--indigo {
-    --_link-label-color: var(--color-indigo-6);
+    --_link-label-color: var(--color-primary);
 }
 
 .link--bold {
@@ -34,12 +35,6 @@
     opacity: 0;
     background-color: var(--_link-underline-color);
     transform: translateY(-0.125rem);
-}
-
-@media (prefers-color-scheme: dark) {
-    .link--default {
-        --_link-label-color: var(--color-gray-5);
-    }
 }
 
 @media (hover: hover) {

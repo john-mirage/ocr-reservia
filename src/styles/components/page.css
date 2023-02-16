@@ -1,5 +1,6 @@
 .page {
-  --_page-background-color: var(--color-white);
+  --_page-background-color: var(--color-background);
+  
   position: relative;
   background-color: var(--_page-background-color);
 }
@@ -10,10 +11,4 @@
 
 .page__input {
   display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --_page-background-color: var(--color-dark-9);
-  }
 }
