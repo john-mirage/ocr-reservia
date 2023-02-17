@@ -1,5 +1,6 @@
 .header {
-  --header-login-color: var(--color-primary);
+  --_header-login-color: var(--color-primary);
+  --_header-logo-color: var(--color-primary);
   
   position: relative;
   z-index: 100;
@@ -34,8 +35,7 @@
 }
 
 .header__logo {
-  width: 100px;
-  height: auto;
+  color: var(--_header-logo-color);
 }
 
 @media screen and (min-width: 768px) {
