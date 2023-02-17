@@ -1,7 +1,7 @@
 .search {
-  --_search-icon-background-color: var(--color-outline);
+  --_search-icon-background-color: var(--color-surface-3);
   --_search-icon-color: var(--color-on-surface-variant);
-  --_search-input-border-color: var(--color-outline);
+  --_search-input-border-color: var(--color-surface-3);
   --_search-input-text-color: var(--color-on-surface);
   --_search-input-ring-color: var(--color-primary);
   --_search-input-placeholder-text-color: var(--color-gray-7);

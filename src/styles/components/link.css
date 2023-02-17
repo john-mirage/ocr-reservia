@@ -6,7 +6,7 @@
     position: relative;
     display: inline-block;
     font-size: 1rem; /* 16px */
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5rem; /* 24px */
     color: var(--_link-label-color);
 }
@@ -51,11 +51,15 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .link--default {
-      transition: color var(--_link-transition-duration);
+    transition-property: color;
   }
 
   .link::after {
-      transition-property: visibility, transform, opacity;
-      transition-duration: var(--_link-transition-duration);
+    transition-property: visibility, transform, opacity;
+  }
+
+  .link,
+  .link::after {
+    transition-duration: var(--_link-transition-duration);
   }
 }
