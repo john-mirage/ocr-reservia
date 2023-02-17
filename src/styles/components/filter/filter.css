@@ -1,7 +1,7 @@
 .filter {
   --_filter-label-color: var(--color-on-surface);
   --_filter-shadow-size: 1px;
-  --_filter-shadow-color: var(--color-outline);
+  --_filter-shadow-color: var(--color-primary-container);
   --_filter-icon-color: var(--color-primary);
   --_filter-icon-x: 0;
   --_filter-foreground-color: var(--color-primary-container);
@@ -77,7 +77,7 @@
   z-index: 30;
   flex: 1 1 0;
   padding-left: 0.75rem; /* 12px */
-  padding-right: 1rem; /* 16px */
+  padding-right: 1.25rem; /* 20px */
   font-size: 1rem; /* 16px */
   font-weight: 700;
   color: var(--_filter-label-color, var(--_filter-checked-label-color, var(--_filter-checked-hover-label-color)));

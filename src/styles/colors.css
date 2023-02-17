@@ -11,7 +11,7 @@
   --color-indigo-3: hsl(228, 100%, 78%);
   --color-indigo-2: hsl(228, 100%, 86%);
   --color-indigo-1: hsl(225, 100%, 93%);
-  --color-indigo-0: hsl(223, 100%, 96%);
+  --color-indigo-0: hsl(223, 100%, 95%);
 
   --color-dark-9: hsl(220, 9%, 7%);
   --color-dark-8: hsl(220, 7%, 9%);
@@ -38,13 +38,12 @@
   --color-primary-light: var(--color-indigo-9);
   --color-primary-hover-light: var(--color-indigo-7);
   --color-on-primary-light: var(--color-white);
-  --color-primary-container-light: var(--color-indigo-1);
+  --color-primary-container-light: var(--color-indigo-0);
   --color-background-light: var(--color-white);
   --color-on-background-light: var(--color-gray-9);
   --color-surface-light: var(--color-white);
   --color-surface-1-light: var(--color-gray-1);
   --color-surface-2-light: var(--color-white);
-  --color-surface-3-light: var(--color-gray-2);
   --color-on-surface-light: var(--color-gray-9);
   --color-surface-variant-light: var(--color-gray-3);
   --color-on-surface-variant-light: var(--color-gray-7);
@@ -54,13 +53,12 @@
   --color-primary-dark: var(--color-indigo-3);
   --color-primary-hover-dark: var(--color-indigo-2);
   --color-on-primary-dark: var(--color-gray-9);
-  --color-primary-container-dark: var(--color-dark-5);
+  --color-primary-container-dark: var(--color-dark-7);
   --color-background-dark: var(--color-dark-9);
   --color-on-background-dark: var(--color-gray-3);
   --color-surface-dark: var(--color-dark-9);
   --color-surface-1-dark: var(--color-dark-8);
   --color-surface-2-dark: var(--color-dark-7);
-  --color-surface-3-dark: var(--color-dark-7);
   --color-on-surface-dark: var(--color-gray-3);
   --color-surface-variant-dark: var(--color-dark-6);
   --color-on-surface-variant-dark: var(--color-gray-5);
@@ -79,7 +77,6 @@
     --color-surface: var(--color-surface-light);
     --color-surface-1: var(--color-surface-1-light);
     --color-surface-2: var(--color-surface-2-light);
-    --color-surface-3: var(--color-surface-3-light);
     --color-on-surface: var(--color-on-surface-light);
     --color-surface-variant: var(--color-surface-variant-light);
     --color-on-surface-variant: var(--color-on-surface-variant-light);
@@ -99,7 +96,6 @@
     --color-surface: var(--color-surface-dark);
     --color-surface-1: var(--color-surface-1-dark);
     --color-surface-2: var(--color-surface-2-dark);
-    --color-surface-3: var(--color-surface-3-dark);
     --color-on-surface: var(--color-on-surface-dark);
     --color-surface-variant: var(--color-surface-variant-dark);
     --color-on-surface-variant: var(--color-on-surface-variant-dark);
