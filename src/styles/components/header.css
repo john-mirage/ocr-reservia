@@ -65,3 +65,16 @@
     order: 2;
   }
 }
+
+@media screen and (hover: hover) {
+  .header__logo:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header__logo {
+    transition-property: transform;
+    transition-duration: 150ms;
+  }
+}

@@ -3,70 +3,81 @@
 \*------------------------------------*/
 
 #filter-economic:checked ~ #app #filter-badge-economic {
-  --_filter-shadow-size: 0;
-  --_filter-foreground-color: var(--color-primary);
-  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
-  --_filter-icon-color: var(--color-on-primary);
-  --_filter-icon-x: 50%;
-  --_filter-label-color: var(--color-on-primary);
+  --_filter-shadow-size: var(--_filter-checked-shadow-size);
+  --_filter-foreground-color: var(--_filter-checked-foreground-color);
+  --_filter-foreground-x: var(--_filter-checked-foreground-x);
+  --_filter-icon-color: var(--_filter-checked-icon-color);
+  --_filter-icon-x: var(--_filter-checked-icon-x);
+  --_filter-label-color: var(--_filter-checked-label-color);
 }
 
 #filter-family:checked ~ #app #filter-badge-family {
-  --_filter-shadow-size: 0;
-  --_filter-foreground-color: var(--color-primary);
-  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
-  --_filter-icon-color: var(--color-on-primary);
-  --_filter-icon-x: 50%;
-  --_filter-label-color: var(--color-on-primary);
+  --_filter-shadow-size: var(--_filter-checked-shadow-size);
+  --_filter-foreground-color: var(--_filter-checked-foreground-color);
+  --_filter-foreground-x: var(--_filter-checked-foreground-x);
+  --_filter-icon-color: var(--_filter-checked-icon-color);
+  --_filter-icon-x: var(--_filter-checked-icon-x);
+  --_filter-label-color: var(--_filter-checked-label-color);
 }
 
 #filter-romantic:checked ~ #app #filter-badge-romantic {
-  --_filter-shadow-size: 0;
-  --_filter-foreground-color: var(--color-primary);
-  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
-  --_filter-icon-color: var(--color-on-primary);
-  --_filter-icon-x: 50%;
-  --_filter-label-color: var(--color-on-primary);
+  --_filter-shadow-size: var(--_filter-checked-shadow-size);
+  --_filter-foreground-color: var(--_filter-checked-foreground-color);
+  --_filter-foreground-x: var(--_filter-checked-foreground-x);
+  --_filter-icon-color: var(--_filter-checked-icon-color);
+  --_filter-icon-x: var(--_filter-checked-icon-x);
+  --_filter-label-color: var(--_filter-checked-label-color);
 }
 
 #filter-pet:checked ~ #app #filter-badge-pet {
-  --_filter-shadow-size: 0;
-  --_filter-foreground-color: var(--color-primary);
-  --_filter-foreground-x: calc(100% - 3rem); /* 48px */
-  --_filter-icon-color: var(--color-on-primary);
-  --_filter-icon-x: 50%;
-  --_filter-label-color: var(--color-on-primary);
+  --_filter-shadow-size: var(--_filter-checked-shadow-size);
+  --_filter-foreground-color: var(--_filter-checked-foreground-color);
+  --_filter-foreground-x: var(--_filter-checked-foreground-x);
+  --_filter-icon-color: var(--_filter-checked-icon-color);
+  --_filter-icon-x: var(--_filter-checked-icon-x);
+  --_filter-label-color: var(--_filter-checked-label-color);
 }
 
-@media (hover: hover) {
-  #filter-economic ~ #app #filter-badge-economic:hover {
-    --_filter-foreground-color: var(--color-primary-container);
-    --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
+@media screen and (hover: hover) {
+  #filter-economic:not(:checked) ~ #app #filter-badge-economic:hover {
+    --_filter-foreground-color: var(--_filter-hover-foreground-color);
+    --_filter-shadow-size: var(--_filter-hover-shadow-size);
+    --_filter-foreground-x: var(--_filter-hover-foreground-x);
   }
   
-  #filter-family ~ #app #filter-badge-family:hover {
-    --_filter-foreground-color: var(--color-primary-container);
-    --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
+  #filter-family:not(:checked) ~ #app #filter-badge-family:hover {
+    --_filter-foreground-color: var(--_filter-hover-foreground-color);
+    --_filter-shadow-size: var(--_filter-hover-shadow-size);
+    --_filter-foreground-x: var(--_filter-hover-foreground-x);
   }
   
-  #filter-romantic ~ #app #filter-badge-romantic:hover {
-    --_filter-foreground-color: var(--color-primary-container);
-    --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
+  #filter-romantic:not(:checked) ~ #app #filter-badge-romantic:hover {
+    --_filter-foreground-color: var(--_filter-hover-foreground-color);
+    --_filter-shadow-size: var(--_filter-hover-shadow-size);
+    --_filter-foreground-x: var(--_filter-hover-foreground-x);
   }
   
-  #filter-pet ~ #app #filter-badge-pet:hover {
-    --_filter-foreground-color: var(--color-primary-container);
-    --_filter-shadow-size: 0;
-    --_filter-foreground-x: calc(100% - 3rem); /* 48px */
+  #filter-pet:not(:checked) ~ #app #filter-badge-pet:hover {
+    --_filter-foreground-color: var(--_filter-hover-foreground-color);
+    --_filter-shadow-size: var(--_filter-hover-shadow-size);
+    --_filter-foreground-x: var(--_filter-hover-foreground-x);
   }
 
-  #filter-economic:checked ~ #app #filter-badge-economic:hover {--_filter-foreground-color: var(--color-primary-hover);}
-  #filter-family:checked ~ #app #filter-badge-family:hover     {--_filter-foreground-color: var(--color-primary-hover);}
-  #filter-romantic:checked ~ #app #filter-badge-romantic:hover {--_filter-foreground-color: var(--color-primary-hover);}
-  #filter-pet:checked ~ #app #filter-badge-pet:hover           {--_filter-foreground-color: var(--color-primary-hover);}
+  #filter-economic:checked ~ #app #filter-badge-economic:hover {
+    --_filter-foreground-color: var(--_filter-checked-hover-foreground-color);
+  }
+
+  #filter-family:checked ~ #app #filter-badge-family:hover {
+    --_filter-foreground-color: var(--_filter-checked-hover-foreground-color);
+  }
+
+  #filter-romantic:checked ~ #app #filter-badge-romantic:hover {
+    --_filter-foreground-color: var(--_filter-checked-hover-foreground-color);
+  }
+
+  #filter-pet:checked ~ #app #filter-badge-pet:hover {
+    --_filter-foreground-color: var(--_filter-checked-hover-foreground-color);
+  }
 }
 
 /*------------------------------------*\
@@ -74,140 +85,157 @@
 \*------------------------------------*/
 
 /* Initial state */
-#app #places .grid__item > .grid__overlay {
-  visibility: visible;
-  opacity: 1;
+#app #places .grid__item {
+  --_grid-item-filter: var(--_grid-item-active-filter);
+  --_grid-item-pointer-events: var(--_grid-item-disabled-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-disabled-user-selection);
 }
 
 /* if all not checked */
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 /* if all checked */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 /* if 1 checked */
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="romantic"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="romantic"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 /* if 2 checked  */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="romantic"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 /* if 3 checked */
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:not(:checked) ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="romantic"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:checked ~
 #filter-family:not(:checked) ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="romantic"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:checked ~
 #filter-family:checked ~
 #filter-romantic:not(:checked) ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="economic"][data-filter~="family"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }
 
 #filter-economic:not(:checked) ~
 #filter-family:checked ~
 #filter-romantic:checked ~
-#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] > .grid__overlay {
-  visibility: hidden;
-  opacity: 0;
+#filter-pet:checked ~ #app #places .grid__item[data-filter~="family"][data-filter~="romantic"][data-filter~="pet"] {
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-events);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
 }

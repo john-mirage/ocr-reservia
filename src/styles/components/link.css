@@ -24,38 +24,38 @@
 }
 
 .link::after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0.125rem; /* 2px */
-    visibility: hidden;
-    opacity: 0;
-    background-color: var(--_link-underline-color);
-    transform: translateY(-0.125rem);
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.125rem; /* 2px */
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--_link-underline-color);
+  transform: translateY(-0.125rem);
 }
 
 @media (hover: hover) {
-    .link--default:hover {
-        color: var(--_link-label-hover-color);
-    }
+  .link--default:hover {
+      color: var(--_link-label-hover-color);
+  }
 
-    .link:hover::after {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0.125rem);
-    }
+  .link:hover::after {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0.125rem);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .link--default {
-        transition: color var(--_link-transition-duration);
-    }
-
-    .link::after {
-        transition-property: visibility, transform, opacity;
-        transition-duration: var(--_link-transition-duration);
-    }
+  .link--default {
+      transition: color var(--_link-transition-duration);
   }
+
+  .link::after {
+      transition-property: visibility, transform, opacity;
+      transition-duration: var(--_link-transition-duration);
+  }
+}

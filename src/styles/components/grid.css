@@ -1,25 +1,26 @@
 .grid {
-  --_grid-overlay-color: var(--color-surface-2);
-  
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1.5rem; /* 24px */
 }
 
-.grid__item--with-overlay {
-  position: relative;
-}
+.grid__item {
+  --_grid-item-disabled-filter: none;
+  --_grid-item-active-filter: blur(4px);
 
-.grid__overlay {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--_grid-overlay-color);
-  opacity: 0.8;
-  border-radius: 0.75rem; /* 12px */
+  --_grid-item-disabled-pointer-events: none;
+  --_grid-item-active-pointer-event: auto;
+
+  --_grid-item-disabled-user-selection: none;
+  --_grid-item-active-user-selection: auto;
+
+  --_grid-item-filter: var(--_grid-item-disabled-filter);
+  --_grid-item-pointer-events: var(--_grid-item-active-pointer-event);
+  --_grid-item-user-selection: var(--_grid-item-active-user-selection);
+
+  filter: var(--_grid-item-filter);
+  pointer-events: var(--_grid-item-pointer-events);
+  user-select: var(--_grid-item-user-selection);
 }
 
 @media screen and (min-width: 576px) {
@@ -77,8 +78,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .grid__overlay {
-    transition-property: visibility, opacity;
+  .grid__item {
+    transition-property: filter;
     transition-duration: 150ms;
   }
 }
