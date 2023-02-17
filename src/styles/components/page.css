@@ -1,12 +1,21 @@
 .page {
   --_page-background-color: var(--color-background);
+  --_page-icons-color: var(--color-icon);
   
   position: relative;
   background-color: var(--_page-background-color);
 }
 
 .page__icons {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .page__input {

@@ -64,9 +64,9 @@
   }
 
   #filter-economic:checked ~ #app #filter-badge-economic:hover {--_filter-foreground-color: var(--color-primary-hover);}
-  #filter-family:checked ~ #app #filter-badge-family:hover {--_filter-foreground-color: var(--color-primary-hover);}
+  #filter-family:checked ~ #app #filter-badge-family:hover     {--_filter-foreground-color: var(--color-primary-hover);}
   #filter-romantic:checked ~ #app #filter-badge-romantic:hover {--_filter-foreground-color: var(--color-primary-hover);}
-  #filter-pet:checked ~ #app #filter-badge-pet:hover {--_filter-foreground-color: var(--color-primary-hover);}
+  #filter-pet:checked ~ #app #filter-badge-pet:hover           {--_filter-foreground-color: var(--color-primary-hover);}
 }
 
 /*------------------------------------*\
