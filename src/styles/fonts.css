@@ -69,10 +69,10 @@
   --font-body-medium-line-height: 1.5rem; /* 24px */
   --font-body-medium-letter-spacing: 0;
 
-  --font-label-large-font-weight: 700;
+  --font-label-large-font-weight: 600;
   --font-label-large-font-size: 1rem; /* 16px */
   --font-label-large-line-height: 1.5rem; /* 24px */
-  --font-label-large-letter-spacing: 0.2px;
+  --font-label-large-letter-spacing: 0.1px;
 
   --font-label-medium-font-weight: 500;
   --font-label-medium-font-size: 0.9375rem; /* 15px */
