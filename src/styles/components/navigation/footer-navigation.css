@@ -12,7 +12,5 @@
 
 .footer-navigation__title {
   margin-bottom: 1rem; /* 16px */
-  font-size: 1.250rem; /* 20px */
-  font-weight: 700;
   color: var(--_footer-navigation-title-color);
 }

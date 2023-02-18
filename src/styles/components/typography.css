@@ -1,0 +1,59 @@
+.typography {
+  font-family: var(--font-stack);
+}
+
+.typography--headline-large {
+  font-weight: var(--font-headline-large-font-weight);
+  font-size: var(--font-headline-large-font-size);
+  line-height: var(--font-headline-large-line-height);
+  letter-spacing: var(--font-headline-large-letter-spacing);
+}
+
+.typography--headline-medium {
+  font-weight: var(--font-headline-medium-font-weight);
+  font-size: var(--font-headline-medium-font-size);
+  line-height: var(--font-headline-medium-line-height);
+  letter-spacing: var(--font-headline-medium-letter-spacing);
+}
+
+.typography--title-large {
+  font-weight: var(--font-title-large-font-weight);
+  font-size: var(--font-title-large-font-size);
+  line-height: var(--font-title-large-line-height);
+  letter-spacing: var(--font-title-large-letter-spacing);
+}
+
+.typography--title-medium {
+  font-weight: var(--font-title-medium-font-weight);
+  font-size: var(--font-title-medium-font-size);
+  line-height: var(--font-title-medium-line-height);
+  letter-spacing: var(--font-title-medium-letter-spacing);
+}
+
+.typography--body-large {
+  font-weight: var(--font-body-large-font-weight);
+  font-size: var(--font-body-large-font-size);
+  line-height: var(--font-body-large-line-height);
+  letter-spacing: var(--font-body-large-letter-spacing);
+}
+
+.typography--body-medium {
+  font-weight: var(--font-body-medium-font-weight);
+  font-size: var(--font-body-medium-font-size);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+
+.typography--label-large {
+  font-weight: var(--font-label-large-font-weight);
+  font-size: var(--font-label-large-font-size);
+  line-height: var(--font-label-large-line-height);
+  letter-spacing: var(--font-label-large-letter-spacing);
+}
+
+.typography--label-medium {
+  font-weight: var(--font-label-medium-font-weight);
+  font-size: var(--font-label-medium-font-size);
+  line-height: var(--font-label-medium-line-height);
+  letter-spacing: var(--font-label-medium-letter-spacing);
+}

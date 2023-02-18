@@ -18,7 +18,7 @@
   --_filter-checked-icon-x: 50%;
   --_filter-checked-foreground-color: var(--color-primary);
   --_filter-checked-foreground-x: calc(100% - 3rem); /* 48px */
-  
+
   --_filter-checked-hover-foreground-color: var(--color-primary-hover);
 
   position: relative;
@@ -78,13 +78,11 @@
   flex: 1 1 0;
   padding-left: 0.75rem; /* 12px */
   padding-right: 1.25rem; /* 20px */
-  font-size: 1rem; /* 16px */
-  font-weight: 700;
   color: var(--_filter-label-color, var(--_filter-checked-label-color, var(--_filter-checked-hover-label-color)));
   user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media screen and (prefers-reduced-motion: no-preference) {
   .filter {
     transition-property: box-shadow;
   }

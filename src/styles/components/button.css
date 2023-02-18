@@ -1,0 +1,72 @@
+.button {
+  --_button-text-min-width: 8rem; /* 128px */
+  --_button-hybrid-min-width: 3.5rem; /* 56px */
+  --_button-height: 3.5rem; /* 56px */
+  --_button-border-radius: 0.75rem; /* 12px */
+  --_button-padding: 1rem; /* 16px */
+  --_button-background-color: var(--color-primary);
+  --_button-background-hover-color: var(--color-primary-hover);
+  --_button-transition-duration: 150ms;
+  --_button-icon-size: 1.25rem; /* 20px */
+  --_button-label-color: var(--color-on-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--_button-height);
+  padding-left: var(--_button-padding);
+  padding-right: var(--_button-padding);
+  background-color: var(--_button-background-color);
+}
+
+.button--text {
+  min-width: var(--_button-text-min-width);
+}
+
+.button--hybrid {
+  min-width: var(--_button-hybrid-min-width);
+}
+
+.button--hybrid .button__label {
+  display: none;
+}
+
+.button--rounded {
+  border-radius: var(--_button-border-radius);
+}
+
+.button__icon {
+  width: var(--_button-icon-size);
+  height: var(--_button-icon-size);
+}
+
+.button__label {
+  color: var(--_button-label-color);
+}
+
+@media screen and (hover: hover) {
+  .button:hover {
+    background-color: var(--_button-background-hover-color);
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .button {
+    transition-property: background-color;
+    transition-duration: var(--_button-transition-duration);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .button--hybrid {
+    min-width: var(--_button-text-min-width);
+  }
+
+  .button--hybrid .button__icon {
+    display: none;
+  }
+  
+  .button--hybrid .button__label {
+    display: block;
+  }
+}

@@ -5,9 +5,6 @@
 
     position: relative;
     display: inline-block;
-    font-size: 1rem; /* 16px */
-    font-weight: 600;
-    line-height: 1.5rem; /* 24px */
     color: var(--_link-label-color);
 }
 
@@ -17,10 +14,6 @@
 
 .link--indigo {
     --_link-label-color: var(--color-primary);
-}
-
-.link--bold {
-    font-weight: 700;
 }
 
 .link::after {

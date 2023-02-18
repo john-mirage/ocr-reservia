@@ -1,19 +1,18 @@
 .filter-list {
-  --filter-list-title-color: var(--color-on-surface);
+  --_filter-list-row-margin-: -0.5rem; /* -8px */
+  --_filter-list-item-margin: 0.5rem; /* 8px */
+  --_filter-list-title-color: var(--color-on-surface);
+
   margin-bottom: 1rem; /* 16px */
 }
 
 .filter-list__title {
   margin-bottom: 1rem; /* 16px */
-  font-size: 1.125rem; /* 18px */
-  font-weight: 700;
-  color: var(--filter-list-title-color);
+  color: var(--_filter-list-title-color);
 }
 
 .filter-list__row {
-  margin-left: -0.5rem; /* -8px */
-  margin-right: -0.5rem; /* -8px */
-  margin-bottom: -1rem; /* -16px */
+  margin: var(--_filter-list-row-margin);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -23,9 +22,7 @@
 }
 
 .filter-list__item {
-  margin-left: 0.5rem; /* 8px */
-  margin-right: 0.5rem; /* 8px */
-  margin-bottom: 1rem; /* 16px */
+  margin: var(--_filter-list-item-margin);
 }
 
 @media screen and (min-width: 992px) {

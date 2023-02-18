@@ -90,23 +90,23 @@
         <nav class="header-navigation">
           <ul class="header-navigation__list">
             <li class="header-navigation__item header-navigation__item--active">
-              <p class="link link--indigo">Hébergements</p>
+              <p class="typography typography--label-large link link--indigo">Hébergements</p>
             </li>
             <li class="header-navigation__item">
-              <a class="link link--default" href="#">Activités</a>
+              <a class="typography typography--label-large link link--default" href="#">Activités</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="header__section header__section--login">
-        <a class="link link--bold link--indigo" href="#">S'inscrire</a>
+        <a class="typography typography--label-large link link--indigo" href="#">S'inscrire</a>
       </div>
     </header>
     
     <!-- hero -->
     <section class="hero">
-      <h1 class="hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p class="hero__subtitle">En plein centre ville ou en pleine nature</p>
+      <h1 class="typography typography--headline-large hero__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p class="typography typography--body-large hero__subtitle">En plein centre ville ou en pleine nature</p>
     </section>
 
     <!-- search -->
@@ -116,18 +116,18 @@
           <use href="#icon-map"/>
         </svg>
       </div>
-      <input class="search__input" type="search" name="search" required placeholder="Marseille, France" aria-labelledby="search-input-label">
-      <button class="search__button">
-        <svg class="search__icon search__icon--search">
+      <input class="typography typography--label-large search__input" type="search" name="search" required placeholder="Marseille, France" aria-labelledby="search-input-label">
+      <button class="button button--hybrid search__button">
+        <svg class="button__icon">
           <use href="#icon-search"/>
         </svg>
-        <span class="search__label" id="search-input-label">Rechercher</span>
+        <span class="typography typography--label-large button__label" id="search-input-label">Rechercher</span>
       </button>
     </form>
 
     <!-- filter list -->
     <section class="filter-list">
-      <h2 class="filter-list__title">Filtres</h2>
+      <h2 class="typography typography--title-large filter-list__title">Filtres</h2>
       <ul class="filter-list__row" role="list">
         <li class="filter-list__item">
           <!-- filter -->
@@ -139,7 +139,7 @@
                 <use href="#icon-money"/>
               </svg>
             </span>
-            <span class="filter__label" id="economic-filter-label">Economique</span>
+            <span class="typography typography--label-large filter__label" id="economic-filter-label">Economique</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -152,7 +152,7 @@
                 <use href="#icon-family"/>
               </svg>
             </span>
-            <span class="filter__label" id="family-filter-label">Familial</span>
+            <span class="typography typography--label-large filter__label" id="family-filter-label">Familial</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -165,7 +165,7 @@
                 <use href="#icon-heart"/>
               </svg>
             </span>
-            <span class="filter__label" id="romantic-filter-label">Romantique</span>
+            <span class="typography typography--label-large filter__label" id="romantic-filter-label">Romantique</span>
           </label>
         </li>
         <li class="filter-list__item">
@@ -178,7 +178,7 @@
                 <use href="#icon-dog"/>
               </svg>
             </span>
-            <span class="filter__label" id="pet-filter-label">Animaux autorisés</span>
+            <span class="typography typography--label-large filter__label" id="pet-filter-label">Animaux autorisés</span>
           </label>
         </li>
       </ul>
@@ -186,13 +186,13 @@
 
     <!-- filter result -->
     <section class="filter-result">
-      <h2 class="filter-result__title">Résultats</h2>
+      <h2 class="screen-reader">Résultats</h2>
       <div class="filter-result__icon-box">
         <svg class="filter-result__icon">
           <use href="#icon-info"/>
         </svg>
       </div>
-      <p class="filter-result__count">Plus de 500 logements sont disponibles dans cette ville</p>
+      <p class="typography typography--body-large filter-result__count">Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
 
     <!-- grid -->
@@ -215,8 +215,8 @@
                   <img class="card__image" src="/src/images/popular/hotel-le-soleil-du-matin.webp" alt="Hotel le soleil du matin" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel Le soleil du matin</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">128€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel Le soleil du matin</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">128€</span></p>
                   <div class="rating rating--5-of-5 card__rating">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -237,8 +237,8 @@
                   <img class="card__image" src="/src/images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp" alt="Au coeur de l'eau chambres d'hôtes" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Au coeur de l'eau chambres d'hôtes</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">71€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Au coeur de l'eau chambres d'hôtes</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">71€</span></p>
                   <div class="rating rating--4-of-5 card__rating">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -259,8 +259,8 @@
                   <img class="card__image" src="/src/images/popular/hotel-tout-bleu-et-blanc.webp" alt="Hôtel tout bleu et blanc" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel tout bleu et blanc</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">68€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel tout bleu et blanc</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">68€</span></p>
                   <div class="rating rating--4-of-5 card__rating">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -288,8 +288,8 @@
                   <img class="card__image" src="/src/images/places/auberge-la-cannebiere.webp" alt="Auberge la cannebière" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Auberge la cannebière</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">25€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Auberge la cannebière</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">25€</span></p>
                   <div class="rating rating--4-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -310,8 +310,8 @@
                   <img class="card__image" src="/src/images/places/hotel-du-port.webp" alt="Hôtel du port" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel du port</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">52€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel du port</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">52€</span></p>
                   <div class="rating rating--5-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -332,8 +332,8 @@
                   <img class="card__image" src="/src/images/places/hotel-les-mouettes.webp" alt="Hôtel Les mouettes" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel Les mouettes</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">76€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel Les mouettes</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">76€</span></p>
                   <div class="rating rating--4-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -354,8 +354,8 @@
                   <img class="card__image" src="/src/images/places/hotel-de-la-mer.webp" alt="Hôtel de la mer" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel de la mer</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">46€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel de la mer</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">46€</span></p>
                   <div class="rating rating--3-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -376,8 +376,8 @@
                   <img class="card__image" src="/src/images/places/auberge-le-panier.webp" alt="Auberge Le panier" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Auberge Le panier</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">23€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Auberge Le panier</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">23€</span></p>
                   <div class="rating rating--4-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -398,8 +398,8 @@
                   <img class="card__image" src="/src/images/places/hotel-chez-amina.webp" alt="Hôtel chez Amina" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Hôtel chez Amina</h3>
-                  <p class="card__subtitle">Nuit à partir de <span class="card__price">96€</span></p>
+                  <h3 class="typography typography--title-medium card__title">Hôtel chez Amina</h3>
+                  <p class="typography typography--body-medium card__subtitle">Nuit à partir de <span class="card__price">96€</span></p>
                   <div class="rating rating--5-of-5">
                     <div class="rating__section rating__section--active">
                       <svg class="rating__icon"><use href="#icon-filled-stars"/></svg>
@@ -413,7 +413,7 @@
             </article>
           </li>
         </ul>
-        <a href="#" class="card-list__link link link--bold link--default">Afficher plus</a>
+        <a href="#" class="typography typography--label-large link link--default card-list__link">Afficher plus</a>
       </section>
       <!-- card list -->
       <section class="card-list card-list--activities grid__item grid__item--col-span" id="activities">
@@ -428,7 +428,7 @@
                   <img class="card__image" src="/src/images/activities/vieux-port.webp" alt="Vieux Port" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Vieux Port</h3>
+                  <h3 class="typography typography--title-medium card__title">Vieux Port</h3>
                 </div>
               </a>
             </article>
@@ -441,7 +441,7 @@
                   <img class="card__image" src="/src/images/activities/fort-de-pomegues.webp" alt="Fort de Pomègues" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Fort de Pomègues</h3>
+                  <h3 class="typography typography--title-medium card__title">Fort de Pomègues</h3>
                 </div>
               </a>
             </article>
@@ -455,7 +455,7 @@
                   <img class="card__image" src="/src/images/activities/parc-national-des-calanques.webp" alt="Parc National des Calanques" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Parc National des Calanques</h3>
+                  <h3 class="typography typography--title-medium card__title">Parc National des Calanques</h3>
                 </div>
               </a>
             </article>
@@ -468,7 +468,7 @@
                   <img class="card__image" src="/src/images/activities/notre-dame-de-la-garde.webp" alt="Notre Dame De La Garde" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Notre Dame De La Garde</h3>
+                  <h3 class="typography typography--title-medium card__title">Notre Dame De La Garde</h3>
                 </div>
               </a>
             </article>
@@ -481,7 +481,7 @@
                   <img class="card__image" src="/src/images/activities/iles-du-frioul.webp" alt="Îles du Frioul" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Îles du Frioul</h3>
+                  <h3 class="typography typography--title-medium card__title">Îles du Frioul</h3>
                 </div>
               </a>
             </article>
@@ -494,7 +494,7 @@
                   <img class="card__image" src="/src/images/activities/parc-longchamp.webp" alt="Parc Longchamp" draggable="false">
                 </div>
                 <div class="card__body">
-                  <h3 class="card__title">Parc Longchamp</h3>
+                  <h3 class="typography typography--title-medium card__title">Parc Longchamp</h3>
                 </div>
               </a>
             </article>
@@ -512,40 +512,40 @@
       <div class="grid grid--footer">
         <!-- footer navigation -->
         <nav class="footer-navigation">
-          <p class="footer-navigation__title">A propos</p>
+          <p class="typography typography--headline-medium footer-navigation__title">A propos</p>
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Fonctionnement du site</a>
+              <a class="typography typography--label-medium link link--default" href="#">Fonctionnement du site</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Conditions générales de ventes</a>
+              <a class="typography typography--label-medium link link--default" href="#">Conditions générales de ventes</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Données et confidentialité</a>
+              <a class="typography typography--label-medium link link--default" href="#">Données et confidentialité</a>
             </li>
           </ul>
         </nav>
         <!-- footer navigation -->
         <nav class="footer-navigation">
-          <p class="footer-navigation__title">Nos hébergements</p>
+          <p class="typography typography--headline-medium footer-navigation__title">Nos hébergements</p>
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Chart qualité</a>
+              <a class="typography typography--label-medium link link--default" href="#">Chart qualité</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Soumettre votre hôtel</a>
+              <a class="typography typography--label-medium link link--default" href="#">Soumettre votre hôtel</a>
             </li>
           </ul>
         </nav>
         <!-- footer navigation -->
         <nav class="footer-navigation">
-          <p class="footer-navigation__title">Assistance</p>
+          <p class="typography typography--headline-medium footer-navigation__title">Assistance</p>
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Centre d'aide</a>
+              <a class="typography typography--label-medium link link--default" href="#">Centre d'aide</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="link link--default" href="#">Nous contacter</a>
+              <a class="typography typography--label-medium link link--default" href="#">Nous contacter</a>
             </li>
           </ul>
         </nav>

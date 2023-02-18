@@ -1,6 +1,13 @@
 .card-list {
   --_card-list-background-color: var(--color-surface-1);
-  --_card-list-text-color: var(--color-on-surface);
+  
+  --_card-list-title-color: var(--color-on-surface);
+  --_card-list-title-font-weight: var(--font-headline-medium-font-weight);
+  --_card-list-title-font-size: var(--font-headline-medium-font-size);
+  --_card-list-title-line-height: var(--font-headline-medium-line-height);
+  --_card-list-title-letter-spacing: var(--font-headline-medium-letter-spacing);
+
+  --_card-list-icon-size: 1.5rem; /* 24px */
 
   padding-top: 2rem; /* 32px */
   padding-bottom: 2rem; /* 32px */
@@ -27,15 +34,18 @@
 
 .card-list__title {
   margin-bottom: 1.5rem; /* 24px */
-  font-size: 1.25rem; /* 20px */
-  color: var(--_card-list-text-color);
+  font-weight: var(--_card-list-title-font-weight);
+  font-size: var(--_card-list-title-font-size);
+  line-height: var(--_card-list-title-line-height);
+  letter-spacing: var(--_card-list-title-letter-spacing);
+  color: var(--_card-list-title-color);
 }
 
 .card-list__icon {
   margin-bottom: 1rem; /* 16px */
-  width: 1.5rem; /* 24px */
-  height: 1.5rem; /* 24px */
-  color: var(--_card-list-text-color);
+  width: var(--_card-list-icon-size);
+  height: var(--_card-list-icon-size);
+  color: var(--_card-list-title-color);
 }
 
 .card-list__link {

@@ -2,6 +2,7 @@
 @import url("@styles/fonts.css");
 @import url("@styles/globals.css");
 
+@import url("@styles/components/button.css");
 @import url("@styles/components/container.css");
 @import url("@styles/components/footer.css");
 @import url("@styles/components/grid.css");
@@ -18,5 +19,7 @@
 @import url("@styles/components/navigation/header-navigation.css");
 @import url("@styles/components/navigation/footer-navigation.css");
 @import url("@styles/components/link.css");
+@import url("@styles/components/screen-reader.css");
+@import url("@styles/components/typography.css");
 
 @import url("@styles/states.css");
