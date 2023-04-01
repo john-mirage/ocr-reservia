@@ -76,10 +76,3 @@
     grid-column: span 2 / span 2;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .grid__item {
-    transition-property: filter;
-    transition-duration: 150ms;
-  }
-}
