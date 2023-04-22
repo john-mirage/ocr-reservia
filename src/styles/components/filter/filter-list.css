@@ -1,5 +1,5 @@
 .filter-list {
-  --_filter-list-row-margin-: -0.5rem; /* -8px */
+  --_filter-list-row-margin: -0.5rem; /* -8px */
   --_filter-list-item-margin: 0.5rem; /* 8px */
   --_filter-list-title-color: var(--color-on-surface);
 
