@@ -8,7 +8,7 @@
   --_button-background-hover-color: var(--color-primary-hover);
   --_button-transition-duration: 150ms;
   --_button-icon-size: 1.25rem; /* 20px */
-  --_button-label-color: var(--color-on-primary);
+  --_button-content-color: var(--color-on-primary);
 
   display: flex;
   justify-content: center;
@@ -17,6 +17,7 @@
   padding-left: var(--_button-padding);
   padding-right: var(--_button-padding);
   background-color: var(--_button-background-color);
+  color: var(--_button-content-color);
 }
 
 .button--text {
@@ -38,10 +39,6 @@
 .button__icon {
   width: var(--_button-icon-size);
   height: var(--_button-icon-size);
-}
-
-.button__label {
-  color: var(--_button-label-color);
 }
 
 @media screen and (hover: hover) {
